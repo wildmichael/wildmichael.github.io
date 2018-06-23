@@ -42,3 +42,4 @@ plugins:
 #   - vendor/ruby/
 
 google_adsense: ca-pub-7099683760297125
+google_analytics: UA-121295789-1
