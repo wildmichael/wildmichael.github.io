@@ -165,8 +165,8 @@ target
 
 As you can see, it mostly contains object files and information for incremental
 builds. Also, there seems to be something prepared for dependencies. I assume
-the I assume the `.lock` files are there to avoid multiple `cargo` process
-stepping on each others toes.
+the `.lock` files are there to avoid multiple `cargo` process stepping on each
+others toes.
 
 ## Getting Fancier
 
