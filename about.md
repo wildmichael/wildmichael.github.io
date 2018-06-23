@@ -4,15 +4,11 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+I am a mechanical engineer by training, who put himself through a doctorate
+in computational fluid dynamics (CFD). You can find the outcome of this ordeal
+[here](https://search.library.ethz.ch/primo-explore/fulldisplay?docid=ebi01_prod009775134&context=L&vid=DADS&search_scope=default_scope&tab=default_tab&lang=en_US).
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Currently I work for a company producing electro-mechanical equipment for
+hydraulic power plants (i.e. water turbines). I am involved in the development
+of engineering software tools and am the architect for an industrial IoT
+platform we use to offer operation and maintenance services.
