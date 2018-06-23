@@ -14,7 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Engineer Gone Programmer
-email: themiwi@gmail.com
+email: themiwi AT gmail DOT com
 description: >- # this means to ignore newlines until "baseurl:"
   My musings, adventures and notes to self on engineering, programming in
   general, maybe some computational fluid dynamics (CFD) and machine learning.
