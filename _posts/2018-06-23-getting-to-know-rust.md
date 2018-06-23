@@ -204,7 +204,7 @@ argparse = "0"
 The part after the equal sign indicates that all versions compatible with
 version 0 are acceptable. Rust and the packages use [semantic
 versioning][semver], so requiring a fixed major version should prevent API
-breaking changes.
+breaking changes to occur on `cargo update`.
 
 Now, I know nothing about how to use this `argparse` package. But no worries,
 `cargo` got our back:
@@ -306,7 +306,7 @@ in a minute.
 
 The statement `parser.refer(&mut name)` warrants some explanation. It's purpose
 is to *"borrow"* a variable for modification by an argument. *But what does it
-mean?* I hear you asking. The heap memory management is Rust is different than
+mean?* I hear you asking. The heap memory management in Rust is different than
 that of the other well known programming languages. It neither uses explicit,
 manual `alloc` and `free`, nor does it use a *garbage collector*. It is much
 closer to the *RAII* and move-semantics of modern C++. Only one variable can
@@ -322,7 +322,7 @@ move-semantics, how could we continue using the `name` variable after argument
 parsing? Here is where the next concept comes in: *"borrowing"*. That is what
 happens in `parser.refer(&mut name)`. The variable `name` is mutably *borrowed*
 to the `.refer()` method call, and with that eventually to the `parser` object.
-Ownership is only transferred once `parser` goes out of scope. And hence we
+Ownership is only returned once `parser` goes out of scope. And hence we
 have the explanation for the additional set of curly braces. Otherwise we would
 not be able to use the `name` variable after the argument parsing.
 
