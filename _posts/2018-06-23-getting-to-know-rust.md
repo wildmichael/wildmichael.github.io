@@ -6,7 +6,7 @@ categories: programming
 ---
 
 All aboard the hype train! Everybody's raving about this great new programming
-language called [_Rust_][rust-lang]. Of all possible names, this is one that
+language called [_Rust_][rust-hype]. Of all possible names, this is one that
 did not inspire immediate trust in me. I guess that is me being a mechanical
 engineer... Any ways, this being the first blog post here, I wanted to record
 my experience, mostly for my own benefit.
@@ -361,7 +361,13 @@ is error handling (which Rust is also quite opinionated and pedantic about)
 and then we haven't seen anything about flow control, structures, enums and
 matching, etc. pp. All topics for follow-up posts -- stay tuned.
 
-[rust-lang]: https://rust-lang.org
+## Resources
+
+* Rust book: https://doc.rust-lang.org/book/
+* Rust community: https://www.rust-lang.org/en-US/community.html
+* Rust-by-example: https://doc.rust-lang.org/stable/rust-by-example/
+
+[rust-hype]: https://insights.stackoverflow.com/survey/2018/#most-loved-dreaded-and-wanted
 [rust-book-install]: https://doc.rust-lang.org/book/second-edition/ch01-01-installation.html
 [rustup]: https://rustup.rs
 [rust-1.27.0]: https://github.com/rust-lang/rust/blob/master/RELEASES.md#version-1270-2018-06-21
