@@ -1,0 +1,14 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+dl { overflow: hidden }
+dt {
+  float: left;
+  clear: both;
+ }
+dt::after {
+  content: ":";
+  margin-right: 0.5em;
+}
