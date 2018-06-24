@@ -15,7 +15,12 @@ Leharstrasse 10<br />
 
 <dl>
 <dt>Tel.</dt><dd>0660 22 43450</dd>
-<dt>E-Mail</dt><dd>{% cloak_email themiwi gmail.com %}</dd>
+<dt>E-Mail</dt><dd>
+<a id="uncloak_f672f7be-2943-490a-a43e-16e81a385cc9" data-before="themiwi" data-after="gmail.com"></a>
+<script type="text/javascript">
+uncloak("uncloak_f672f7be-2943-490a-a43e-16e81a385cc9");
+</script>
+</dd>
 </dl>
 
 Quelle: Erstellt mit dem [Impressum Generator von

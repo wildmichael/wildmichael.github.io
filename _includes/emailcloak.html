@@ -1,0 +1,11 @@
+<script type="text/javascript">
+var uncloak = function (id) {
+  el = document.getElementById(id);
+  var after = el.dataset.after;
+  var before = el.dataset.before;
+  el.href = "mailto:" + before + "@" + after;
+  if (el.innerHTML == "") {
+    el.innerHTML = before + "@" + after;
+  }
+}
+</script>
