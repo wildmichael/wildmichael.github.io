@@ -31,6 +31,12 @@ am running not the most recent version (at the time of writing that would be
 [1.27.0][rust-1.27.0]) is for the purpose of these experiments of minor
 importance.
 
+> **Update 2018-06-25:** [Wesley Moore](https://twitter.com/wezm) pointed out
+> to me [on Twitter](https://twitter.com/wezm/status/1010991559582498816) that
+> rustup does not mess with `/usr`. Instead everything is happening in the
+> user's home, specifically `~/.cargo/`, as I should have read about in the
+> [book](https://t.co/xMwd4iRbj6).
+
 ## First Baby Steps
 
 Every programming tutorial should start with the infamous _Hello, world!_
