@@ -41,8 +41,8 @@ as overhead and an unnecessary drag that slows them down.
 
 What does all of this mean for software engineering?
 
-First off, it mandates the use of _version control system_ (VCS). This
-is the one tool that allows you to keep track of
+First off, it mandates the use of a [_version control system_ (VCS)][VCS].
+This is the one tool that allows you to keep track of
 
 * what was changed when and by whom.
 * when was what shipped.
@@ -56,8 +56,8 @@ in such a way the information contained in the VCS will be of very
 little value.
 
 So, this article will first introduce the processes that I find to
-be useful and then proceed to explain the mechanics from the
-perspective of the programmer
+be useful and then in the follow-up article I will proceed to explain the
+mechanics from the perspective of the programmer
 
 ## Process
 
@@ -154,7 +154,7 @@ introduced. However, it often is inconvenient or inappropriate to stop all
 development during the release phase. Hence, the release process should
 be split out into a separate _release branch_ that only lives as long as
 it takes to finish the release. Usually it is named after the version number
-with `release/` prefixed; i.e. for version _1.2.3_ the branch name would be
+with `release/` prefixed; i.e. for version _1.2.0_ the branch name would be
 `release/1.2.0`. The branch-visualization is hence augmented by a new branch:
 
 ```lang-none
@@ -173,11 +173,11 @@ release branch should end up there too.
 That is where _merging_ comes in. A _merge_ is the joining of two (or more)
 branches into one. Technically, it means that in the commit graph there
 is a commit with more than one parent. For our release-process this means
-that the _release branch_ is merged first into `master`, thus recording the
-state with which our product was shipped. Second, the `master` branch is
-merged back into `develop`, thus bringing back all the changes made during
-the release process to the main development branch. The commit graph thus
-looks like this:
+that the _release branch_ is merged first into `master`, recording the state
+with which our product was shipped. Second, the `master` branch is merged
+back into `develop`, thus bringing back all the changes made during the
+release process to the main development branch. The commit graph hence looks
+like this:
 
 ```lang-none
 (root) o--o--o--o--o--o--o develop
@@ -246,8 +246,8 @@ branches:
 
 ### Maintenance Branches
 
-Quite often software was sold to include bug fixes but no new features during
-a cerain maintenane period. My advice: Try to avoid this if you can. It
+Quite often software is sold to include bug fixes but no new features during
+a certain maintenane period. My advice: Try to avoid this if you can. It
 introduces a huge amount of complexity for your software development processes
 that is hard to justify by the potential business benefits. However, probably
 you are not in a position to make this decision, so here we go.
@@ -301,22 +301,22 @@ sometimes require modifications before agreeing for the modifications to be
 merged. This is what is commonly called a _pull request_ (PR). Many VCS
 hosting platforms, such as Microsoft Azure DevOps, Atlassian Bitbucket,
 GitHub or Gitlab allow policies to be defined how many positive reviews
-are necessary for mergin and assist the reviewer by providing tools for
+are necessary for merging and assist the reviewer by providing tools for
 commenting on the proposed changes.
 
 However, pull requests are not only useful for the gatekeeping of feature
 and bugfix branch merges, but can also be used when implementing QA
 procedures before merging a release or hotfix branch into `master`.
 
-However, PR's not only fulfill a pure QA function, as important as that
+More importantly, PR's not only fulfill a pure QA function, as vital as that
 already is. No, they also help a team to spread know-how. Firstly, the
 reviewer gets to see what has changed and where, in a sometimes vast code
 base, functionality is located that was previously unknown. Also, reviewers
 and submitters get to exchange opinions about design, techniques and style.
 Quite often neat tricks can be learned, either by the requester or the
-reviewers. In general the practice of code reviewing will make the team 
-more resilient against individuals dropping out, be it due to illnes,
-vacation or job change.
+reviewers. In general the practice of code reviewing will make the team more
+resilient against individuals dropping out, be it due to illnes, vacation or
+job change.
 
 ### Summary
 
@@ -329,7 +329,7 @@ There are two main branches that track the product:
    the next release.
 
 To isolate the testing and stabilization phase before a formal release, a
-so-called _release branch_ is opened that is name `release/<version-name>`.
+so-called _release branch_ is opened that is named `release/<version-name>`.
 When finished, the release branch is merged into `master` where the release
 is tagged. Finally, `master` is merged back into `develop` to finish the
 cycle.
@@ -360,7 +360,7 @@ supported maintenance branch for which the modification is necessary is
 identified and it is used to branch off a feature or bugfix branch and then a
 release branch or, hopefully more common, a hotfix branch. When finished, the
 release or hotfix branch is merged into the maintenance branch and the
-release is tagged. This release is then merged to the next maintennce branch,
+release is tagged. This release is then merged to the next maintenance branch,
 where it again is tagged, and so on until the last branch is reached where
 the modification needs to be applied. If this is `master`, it is finally
 merged back into `develop`. If at some stage the merging does not simply work
@@ -371,13 +371,16 @@ the merging failed. The complexity of dealing with maintenance branches is
 considerable and the business decision whether do so, and for how long a
 version is maintained, should be carefully weighed against the costs.
 
-Now that the overall development process has been introduced, the next part
-will explore the concrete tools and steps that a programmer needs to follow
-the workflow using [Git][git]. While most VCS will be capabable enough to
-support the described workflow, Git is probably the most widely adopted VCS
-and offers some unique features that make it particularly well suited. Hence
-the next article will focus on this tool.
+## Next Up
 
+Now that the overall development process has been introduced, the next part
+will explore the concrete tools and steps that a programmer needs in order to
+follow the workflow using [Git][git]. While most VCS will be capabable enough
+to support the described workflow, Git is probably the most widely adopted
+VCS and offers some unique features that make it particularly well suited.
+Hence the next article will focus on this tool.
+
+[VCS]: https://en.wikipedia.org/wiki/Version_control
 [CD]: https://en.wikipedia.org/wiki/Continuous_delivery
 [git-flow]: https://nvie.com/posts/a-successful-git-branching-model/
 [git]: https://git-scm.org
