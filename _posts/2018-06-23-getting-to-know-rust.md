@@ -239,7 +239,7 @@ extern crate argparse;
 
 fn main() {
     let parser = argparse::ArgumentParser::new();
-    parser.parse_args_or_exist();
+    parser.parse_args_or_exit();
     println!("Hello, world!");
 }
 {% endhighlight %}
