@@ -33,7 +33,7 @@ class static MyClass
 }
 ```
 
-That statemtn with the `Where()` call gets translated to something like this:
+That statement with the `Where()` call gets translated to something like this:
 
 ```sql
 SELECT aproperty, someproperty
@@ -117,7 +117,7 @@ method the expression is first checked to be not `null` and that the lambda
 body has the correct AST node type. This method only determines the name of a
 property, trying to get the name of a complex expression (such as arithmetic
 expressions, deeply nested properties, method calls, lambda bodies with many
-statements, etc) would be completely nonsensical.
+statements, etc.) would be completely nonsensical.
 
 Once we are sure that the expression has the right form we cast it to the
 specific type and extract the `MemberInfo` object from which we finally get
@@ -133,7 +133,7 @@ that used a so-called *composite* key. I.e. row identity was not given by a
 single column, but by the combined values of multiple columns, in this case
 two columns. I needed to fetch a whole list of items, so I didn't want to
 query for each item individually. When using LINQ on collections this is
-a fairly straigtht forward task:
+a fairly straight forward task:
 
 ```cs
 var listOfItems = new List<(string Key1, int Key2, string Value)>
@@ -214,7 +214,7 @@ UNION ALL
 ![Eww, gross][eww]
 
 What we need is a way of dynamically chaining `OR` clauses together as we did
-with a fixed number of composite key values to search. Something that peforms
+with a fixed number of composite key values to search. Something that performs
 the _"and so on"_ part in below code:
 
 ```cs
@@ -364,7 +364,7 @@ have parameter expressions of their own!
 
 There's two possible solutions to this:
 
-1. Explicilty call the `key1Expression` and `key2Expression` with our
+1. Explicitly call the `key1Expression` and `key2Expression` with our
    own `parameter` expression.
 2. Somehow replace the parameter expression inside the bodies of
    `key1Expression` and `key2Expression` with our newly created `parameter`
@@ -375,7 +375,7 @@ Let's try both.
 ## Invoking the Key Expressions
 
 For this option to work, we need an expression that represents an invocation
-of our key expresssions. True to its name, [`Expression.Invoke()`] will do
+of our key expressions. True to its name, [`Expression.Invoke()`] will do
 the job.
 
 > ### Note
@@ -472,7 +472,7 @@ public static class MyExpressions
 }
 ```
 
-Let's take this for a [test ride][fiddle with invokations]:
+Let's take this for a [test ride][fiddle with invocations]:
 
 ```cs
 using System;
@@ -613,7 +613,7 @@ the big guns rethink your problem. And then again. Most times when you have
 to resort to this type of black sorcery it is a sure sign of a
 [code][code smell] or [design smell]. When writing an application (as opposed
 to creating a new library or framework), using this API is almost certainly
-wrong and only justifyable in cases where the alternatives would be even
+wrong and only justifiable in cases where the alternatives would be even
 worse or there are external constraints (such as an external database with
 compound keys).
 
