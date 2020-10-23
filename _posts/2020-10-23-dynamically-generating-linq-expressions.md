@@ -637,6 +637,7 @@ compound keys).
 [`Expression.Parameter()`]: https://docs.microsoft.com/en-us/dotnet/api/system.linq.expressions.expression.parameter
 [fiddle fail]: https://dotnetfiddle.net/Wvm2Vw
 [failure]: https://media.giphy.com/media/A1SxC5HRrD3MY/giphy.gif
+[`Expression.Invoke()`]: https://docs.microsoft.com/en-us/dotnet/api/system.linq.expressions.expression.invoke
 [`Expression.Call()`]: https://docs.microsoft.com/en-us/dotnet/api/system.linq.expressions.expression.call
 [bloated]: https://media.giphy.com/media/gBItxZWZwH3Vu/giphy.gif
 [celebrate]: https://media.giphy.com/media/Is1O1TWV0LEJi/giphy.gif
