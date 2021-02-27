@@ -13,4 +13,7 @@
   {%- endif -%}
   {% include cookiesconsent.html %}
   {% include emailcloak.html %}
+  {% if page.math %}
+    {% include katex.html %}
+  {% endif %}
 </head>
