@@ -835,8 +835,8 @@ $$
 
 The reasoning is also straight forward:
 
-* The change in the mass' position \\(\mathbf{x}\\) is given by its velocity
-  \\(\mathbf{v}\\).
+* The change in the mass' position \\(x\\) is given by its velocity
+  \\(v\\).
 * The change in velocity (i.e. the acceleration) is given by the forces acting
   on the mass, following Newton's law: \\(a = F / m \\).
 * The force of the spring is proportional to the stretching or
