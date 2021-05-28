@@ -52,22 +52,22 @@ welche z.B. aus SQL Datenbanken, aber auch unstrukturierten Dateien bestehen
 können. Microsoft setzt hier auf bekannte Open-Source Technologien wie Apache
 Spark, Apache Hadoop, Apache HBase, R und Python.
 
-* Azure Daten-Explorer
-* Azure Databricks
-* Azure Synapse Analytics
-* Data Factory
-* Data Lake Analytics
-* HDInsight
-* R-Server for HDInsight
-* Microsoft Graph Data Connect
+* [Daten-Explorer]
+* [Databricks]
+* [Synapse Analytics]
+* [Data Factory]
+* [Data Lake Analytics]
+* [HDInsight]
+* [R-Server for HDInsight]
+* [Microsoft Graph Data Connect]
 
 ### Daten-Governance und Verwaltung
 
 Grosse Firmen müssen ihre Daten einerseits gut auffindbar machen, andererseits
 diese aber auch vor unerlaubten Zugriffen schützen.
 
-* Azure Pureview
-* Azure Data Catalog
+* [Pureview]
+* [Data Catalog]
 
 ### Datenstrom-Verarbeitung
 
@@ -77,7 +77,7 @@ Maschinendaten laufend analysieren um z.B. Anomalien zu entdecken. Diese
 Analysen können auch direkt auf Geräten ausserhalb der Cloud, z.B. auf
 Maschinensteuerungen, ausgeführt werden.
 
-* Azure Stream Analytics
+* [Stream Analytics]
 
 ### Log-Daten Analyse
 
@@ -85,15 +85,15 @@ Grosse Applikationen generieren grosse Mengen an Log-Daten. Diese Logs können
 unmöglich mehr einzeln gelesen werden, daher müssen sie mit spezialisierten
 Tools analysiert werden.
 
-* Log Analytics
+* [Log Analytics]
 
 ### Business Intelligence
 
 Dienste und Werkzeuge um die eigenen Geschäftsdaten zu analysieren, aber auch,
 um diese unter eigenem Namen in Produkte einzubauen.
 
-* Azure Analysis Services
-* Power BI Embedded
+* [Analysis Services]
+* [Power BI Embedded]
 
 ## Rechnerinfrastruktur
 
@@ -105,14 +105,14 @@ Legacy-Anwendungen in die Cloud migriert werden sollen. Mit all diesen Diensten
 übernimmt der Kunde die Verantwortung für Updates und Wartung des
 Betriebssystems. 
 
-* Azure CycleCloud
-* VMWare-Lösungen in Azure
-* Virtuelle Computer
-* Microsoft Azure Virtual Machine Scale Sets
-* Azure Dedicated Host
-* Windows Virtual Desktop
-* VMware Horizon Cloud in Microsoft Azure
-* Virtuelle Citrix-Apps und -Desktops für Azure
+* [CycleCloud]
+* [VMWare-Lösungen in Azure]
+* [Virtuelle Computer]
+* [Microsoft Azure Virtual Machine Scale Sets]
+* [Dedicated Host]
+* [Windows Virtual Desktop]
+* [VMware Horizon Cloud in Microsoft Azure]
+* [Virtuelle Citrix-Apps und -Desktops für Azure]
 
 ## Betrieb von Anwendungen
 
@@ -123,23 +123,23 @@ Microsoft verwalteter Infrastruktur. D.h. der Kunde ist im Gegensatz zu den
 zuvor erwähnten Diensten, nicht für die Updates und Wartung des Betriebssystems
 verantwortlich.
 
-* Azure Spring Cloud
-* Cloud Services
-* SQL Server auf VM
-* Mobile Apps
+* [Spring Cloud]
+* [Cloud Services]
+* [SQL Server auf VM]
+* [Mobile Apps]
 
 ### Microservices und Container
 
-* Service Fabric
-* Azure Kubernetes Service
-* Azure Red Hat OpenShift
-* Azure Container Instances
-* Web-App für Container
-* Container Registry
+* [Service Fabric]
+* [Kubernetes Service]
+* [Red Hat OpenShift]
+* [Container Instances]
+* [Web-App für Container]
+* [Container Registry]
 
 ### Serverlose Anwendungen
 
-* Azure Functions
+* [Functions]
 
 ### API's
 
@@ -154,11 +154,11 @@ Kommunikation wird auch immer mehr, z.B. für Chats und Benachrichtigungen, zur
 Anzeige von Live-Daten, etc. benötigt. Für all diese Bedürfnisse bietet
 Microsoft in der Azure Cloud Dienste.
 
-* API-Apps
-* API Management
-* App Service
-* Azure SignalR Service
-* Statische Web-Apps
+* [API-Apps]
+* [API Management]
+* [App Service]
+* [SignalR Service]
+* [Statische Web-Apps]
 
 ## Speicher
 
@@ -170,17 +170,17 @@ von dem Microsoft-eigenen SQL Server, aber auch verschiedene open-source SQL
 Datenbanken und sogenannte No-SQL Datenbanken, wie Key-Value-Stores, Dokumenten-
 und Graphendatenbanken umfasst.
 
-* Azure API für FHIR (Gesundheitsdaten)
-* Azure Cache for Redis
-* Azure Cosmos DB
-* Azure Database for MariaDB
-* Azure Database for MySQL
-* Azure Database for PostgreSQL
-* Azure SQL Datenbank
-* Azure SQL Edge
-* Azure SQL Managed Instance
-* Table Storage
-* Azure Managed Storage for Apache Cassandra
+* [API für FHIR] (Gesundheitsdaten)
+* [Cache for Redis]
+* [Cosmos DB]
+* [Database for MariaDB]
+* [Database for MySQL]
+* [Database for PostgreSQL]
+* [SQL Datenbank]
+* [SQL Edge]
+* [SQL Managed Instance]
+* [Table Storage]
+* [Managed Storage für Apache Cassandra]
 
 ### Andere Speicher
 
@@ -201,21 +201,21 @@ Cloud-Datencenter transportiert werden können.
 Sollen Daten sicher mit Drittparteien geteilt werden, stellt auch Microsoft hier
 einen Dienst bereit.
 
-* Archive Storage
-* Avere vFXT für Azure
-* Azure Backup
-* Azure Data Lake Storage
-* Azure Data Share
-* Azure Files
-* Azure FXT Edge Filer
-* Azure HPC Cache
-* Azure NetApp Files
-* Azure Blob Storage
-* Azure Data Box
-* Azure Disk Storage
-* Queue Storage
-* Speicher Explorer
-* StorSimple
+* [Archive Storage]
+* [Avere vFXT für Azure]
+* [Backup]
+* [Data Lake Storage]
+* [Data Share]
+* [Files]
+* [FXT Edge Filer]
+* [HPC Cache]
+* [NetApp Files]
+* [Blob Storage]
+* [Data Box]
+* [Disk Storage]
+* [Queue Storage]
+* [Speicher Explorer]
+* [StorSimple]
 
 ## Stapelverarbeitung
 
@@ -225,7 +225,7 @@ benötigen diese Anwendungen viel Rechnerleistung, welche dann zwischen den
 Durchläufen brach liegt und Kosten verursacht. Mit diesem Dienst zur
 Stapelverarbeitung können die Ressourcen automatisch skaliert werden.
 
-* Batch
+* [Batch]
 
 ## Entwicklerwerkzeuge und DevOps
 
@@ -249,15 +249,15 @@ Kommandozeilentools für Scripting bereit.
 Um die Anwendungskonfiguration zu vereinfachen, bietet Azure einen Dienst, um
 die Parameter zentral zu verwalten.
 
-* Azure Artifacts
-* Azure Boards
-* Azure DevTest Labs
-* Azure Pipelines
-* Azure Repos
-* Azure Test Plans
-* Azure Lab Services
-* Azure SDK's
-* App Configuration
+* [Artifacts]
+* [Boards]
+* [DevTest Labs]
+* [Pipelines]
+* [Repos]
+* [Test Plans]
+* [Lab Services]
+* [SDK's]
+* [App Configuration]
 
 ## Hybrid und Multicloud
 
@@ -275,13 +275,13 @@ Andere Dienste von Microsoft in diesem Themenfeld ermöglichen es, Azure Dienste
 auch ausserhalb der Cloud zu nutzen, z.B. auf Edge-Geräten, im eigenen Datacenter
 oder an Orten ohne Netzwerkanbindung.
 
-* Azure Arc
-* Azure ExpressRoute
-* Azure Stack
-* Azure Stack Edge
-* Azure Stack HCI
-* Azure Stack Hub
-* Azure Modular Datacenter
+* [Arc]
+* [ExpressRoute]
+* [Stack]
+* [Stack Edge]
+* [Stack HCI]
+* [Stack Hub]
+* [Modular Datacenter]
 
 ## Identität
 
@@ -292,9 +292,9 @@ Domänenkontroller zur Verwaltung von virtuellen Maschinen in der Azure Cloud
 bereit. Auch können Zugriffe über Organisationsgrenzen hinweg an externe
 Personen, z.B. Kunden oder Partnern gewährt und verwaltet werden.
 
-* Azure Active Directory
-* Azure Active Directory Domain Services
-* Externe Azure Active Directory Identitäten
+* [Active Directory]
+* [Active Directory Domain Services]
+* [Externe Azure Active Directory Identitäten]
 
 ## Integration, Messaging, Events
 
@@ -306,11 +306,11 @@ Applikationen in kleine, lose gekoppelte Teile zu zerlegen oder bestehende
 Applikationen miteinander zu integrieren. Die Ereignisse oder Nachrichten können
 aber z.B. auch von IoT Geräten erzeugt werden.
 
-* Service Bus
-* Event Grid
-* Logic Apps
-* Event Hubs
-* Queue Storage
+* [Service Bus]
+* [Event Grid]
+* [Logic Apps]
+* [Event Hubs]
+* [Queue Storage]
 
 ## Internet of Things (IoT)
 
@@ -327,17 +327,17 @@ Effizienz von Anlagen zu maximieren oder deren Wartung zu optimieren. Letztlich
 können auch AI/Machine-Learning-Anwendungen auf IoT Geräten eingesetzt und mit
 den AI/Machine-Learning Diensten in der Cloud integriert werden.
 
-* Azure Digital Twins
-* Azure IoT Central
-* Azure IoT Edge
-* Azure IoT Hub
-* Azure IoT Solution Accelerators
-* Azure RTOS
-* Azure Sphere
-* Azure Time Series Insight
-* Windows 10 IoT Services
-* Azure Defender for IoT
-* Azure Percept
+* [Digital Twins]
+* [IoT Central]
+* [IoT Edge]
+* [IoT Hub]
+* [IoT Solution Accelerators]
+* [RTOS]
+* [Sphere]
+* [Time Series Insight]
+* [Windows 10 IoT Services]
+* [Defender for IoT]
+* [Percept]
 
 ## AI und Machine-Learning
 
@@ -353,34 +353,34 @@ KI-gestützten Suche implementiert werden. Microsoft bietet auch eine kuratierte
 Sammlung öffentlich zugänglicher Datensätze an. Viele der Dienste können in der
 Cloud, im eigenen Datacenter oder auf Edge-Geräten eingesetzt werden.
 
-* Azure Bot Services
-* Azure Cognitive Search
-* Azure Machine Learning
-* Azure Open Datasets
-* Azure Cognitive Services
-* Anomalieerkennung
-* Content Moderator
-* Metrics Advisor
-* Personalisierung
-* Language Understanding
-* Plastischer Reader
-* QnA Maker
-* Textanalysen
-* Übersetzer
-* Spracherkennung
-* Text-to-Speech
-* Sprachübersetzung
-* Sprechererkennung
-* Custom Vision
-* Formularerkennung
-* Gesichtserkennung
-* Maschinelles Sehen
-* Videoindizierung
-* Bing Websuche
-* Virtuelle Data-Science Computer
-* Microsoft Genomics
-* Project Bonsai
-* Health Bot
+* [Bot Services]
+* [Cognitive Search]
+* [Machine Learning]
+* [Open Datasets]
+* [Cognitive Services]
+* [Anomalieerkennung]
+* [Content Moderator]
+* [Metrics Advisor]
+* [Personalisierung]
+* [Language Understanding]
+* [Plastischer Reader]
+* [QnA Maker]
+* [Textanalysen]
+* [Übersetzer]
+* [Spracherkennung]
+* [Text-to-Speech]
+* [Sprachübersetzung]
+* [Sprechererkennung]
+* [Custom Vision]
+* [Formularerkennung]
+* [Gesichtserkennung]
+* [Maschinelles Sehen]
+* [Videoindizierung]
+* [Bing Websuche]
+* [Virtuelle Data-Science Computer]
+* [Microsoft Genomics]
+* [Project Bonsai]
+* [Health Bot]
 
 ## Multimedia
 
@@ -389,12 +389,12 @@ Wiedergabe von Multimedia-Inhalten angeboten, welche z.B. auch schon für die
 Übertragung von den Olympischen Spielen genutzt wurden. Weiter können diese
 Inhalte mit DRM vor Diebstahl geschützt werden.
 
-* Azure Media Player
-* Content Delivery Network
-* Content Protection
-* Codierung
-* Live- und On-Demand Streaming
-* Live Video Analytics
+* [Media Player]
+* [Content Delivery Network]
+* [Content Protection]
+* [Codierung]
+* [Live- und On-Demand Streaming]
+* [Live Video Analytics]
 
 ## Migration
 
@@ -407,7 +407,7 @@ Hilfe sich das Unterfangen Planen lässt. Workloads können ermittelt bewertet,
 geplant und verfolgt werden. Sämtliche Aktionen werden rückverfolgbar
 aufgezeichnet und können so für Audits verwendet werden.
 
-* Azure Migrate
+* [Migrate]
 
 ## Mixed Reality
 
@@ -421,10 +421,10 @@ und maschinellem Sehen lassen sich auch Eingaben Erfassen. Das Rendering für
 z.B. komplexe 3D-Modelle kann remote in der Cloud erfolgen und die so
 entstandenen Bilder auf die Datenbrillen übertragen werden.
 
-* Kinect DK
-* Azure Remote Rendering
-* Spatial Anchors
-* Object Anchors
+* [Kinect DK]
+* [Remote Rendering]
+* [Spatial Anchors]
+* [Object Anchors]
 
 ## Mobile
 
@@ -436,10 +436,10 @@ Navigationsdiensten über Programmier-Bibliotheken und Werkzeugen und
 Kommunikationsplattformen, welche es dem Entwickler ermöglichen, Video, Chat,
 SMS und Telefonie in der App zu nutzen.
 
-* Azure Maps
-* Visual Studio App Center
-* Xamarin
-* Azure Communications Services
+* [Maps]
+* [Visual Studio App Center]
+* [Xamarin]
+* [Communications Services]
 
 ## Netzwerk
 
@@ -460,24 +460,24 @@ ein Netzwerk eingebunden werden.  Betreiber von eigenen Kommunikationssatelliten
 können deren Einsatz, die Erdstationen etc. planen und als eigene Dienste auf
 Azure anbieten.
 
-* Application Gateway
-* Azure Bastion
-* Azure DNS
-* Azure Firewall
-* Lastenausgleich
-* Azure Firewall Manager
-* Azure Front Door
-* Azure Internet Analyzer
-* Azure Private Link
-* Network Watcher
-* Traffic Manager
-* Virtual Network
-* Virtual WAN
-* VPN Gateway
-* Web Application Firewall
-* Azure Orbital
-* Azure Route Server
-* Azure Load Balancer
+* [Application Gateway]
+* [Bastion]
+* [DNS]
+* [Firewall]
+* [Lastenausgleich]
+* [Firewall Manager]
+* [Front Door]
+* [Internet Analyzer]
+* [Private Link]
+* [Network Watcher]
+* [Traffic Manager]
+* [Virtual Network]
+* [Virtual WAN]
+* [VPN Gateway]
+* [Web Application Firewall]
+* [Orbital]
+* [Route Server]
+* [Load Balancer]
 
 ## Sicherheit
 
@@ -491,14 +491,14 @@ für Compliance-Nachweise erstellt. Microsoft bietet auch einen Dienst zur
 Sicherstellung der Integrität und Vertrauenswürdigkeit von Ressourcen ausserhalb
 der Cloud an, zum Beispiel von Edge Geräten.
 
-* Azure Defender
-* Azure DDoS Protection
-* Azure Dedicated HSM
-* Azure Information Protection
-* Azure Sentinel
-* Key Vault
-* Security Center
-* Microsoft Azure Attestation
+* [Defender]
+* [DDoS Protection]
+* [Dedicated HSM]
+* [Information Protection]
+* [Sentinel]
+* [Key Vault]
+* [Security Center]
+* [Microsoft Azure Attestation]
 
 ## Verwaltung, Automatisierung und Governance
 
@@ -507,12 +507,12 @@ der Cloud an, zum Beispiel von Edge Geräten.
 In der Azure Cloud lassen sich viele Aufgaben und Dienste automatisieren und
 mittels Vorlagen und Schablonen konsistent und vereinfacht erstellen.
 
-* Automation
-* Azure Blueprint
-* Vorlagen für Azure Resource Manager
-* Cloud Shell
-* Azure Automanage
-* Azure Resource Mover
+* [Automation]
+* [Blueprint]
+* [Vorlagen für Azure Resource Manager]
+* [Cloud Shell]
+* [Automanage]
+* [Resource Mover]
 
 ### Governance
 
@@ -523,9 +523,9 @@ Sicherheit, Leistung und Senkung von Kosten. Die Zugriffsrechte auf Daten kann f
 Personen und Systeme innerhalb und ausserhalb der eigenen Organisation gesteuert
 und überwacht werden.
 
-* Azure Advisor
-* Azure Lighthouse
-* Azure Policy
+* [Advisor]
+* [Lighthouse]
+* [Policy]
 
 ### Verwaltung und Überwachung
 
@@ -533,18 +533,18 @@ Für den Betrieb von Anwendungen und Ressourcen in der Cloud bietet Microsoft
 Dienste zur Überwachung, Kostenverrechnung und Wiederherstellung. Mit der
 Mobile-App können viele dieser Aufgaben auch unterwegs erledigt werden.
 
-* Azure Mobile App
-* Azure Monitor
-* Azure Service Health
-* Azure Site Recovery
-* Azure Cost Management und Abrechnung
+* [Mobile App]
+* [Monitor]
+* [Service Health]
+* [Site Recovery]
+* [Cost Management und Abrechnung]
 
 ## Anbieten eigener Dienste
 
 Microsoft hat das Azure-Ökosystem auch für Drittanbieter geöffnet, die selbst
 eigene Dienste und Ressourcen anbieten können.
 
-* Azure Managed Applications
+* [Managed Applications]
 
 ## Abschliessende Gedanken
 
@@ -569,3 +569,208 @@ Gegenstand wie ein Nagel ausschaut. Hier lohnt es sich den Spieltrieb
 auszuleben, die neuen Möglichkeiten in kleinen Prototypen und "Wegwerfprojekten"
 auszuprobieren. Aus dem einfachen Grund, dass man das, was man nicht kennt, auch
 nicht sinnvoll einsetzen kann.
+
+[Active Directory Domain Services]: https://azure.microsoft.com/de-de/services/active-directory-ds/
+[Active Directory]: https://azure.microsoft.com/de-de/services/active-directory/
+[Advisor]: https://azure.microsoft.com/de-de/services/advisor/
+[Analysis Services]: https://azure.microsoft.com/de-de/services/analysis-services/
+[Anomalieerkennung]: https://azure.microsoft.com/de-de/services/cognitive-services/anomaly-detector/
+[Apache Cassandra]: https://cassandra.apache.org/
+[API für FHIR]: https://azure.microsoft.com/de-de/services/azure-api-for-fhir/
+[API Management]: https://azure.microsoft.com/de-de/services/api-management/
+[API-Apps]: https://azure.microsoft.com/de-de/services/app-service/api/
+[App Configuration]: https://azure.microsoft.com/de-de/services/app-configuration/
+[App Service]: https://azure.microsoft.com/de-de/services/app-service
+[Application Gateway]: https://azure.microsoft.com/de-de/services/application-gateway/
+[Arc]: https://azure.microsoft.com/de-de/services/azure-arc/
+[Archive Storage]: https://azure.microsoft.com/de-de/services/storage/archive/
+[Artifacts]: https://azure.microsoft.com/de-de/services/devops/artifacts/
+[Automanage]: https://azure.microsoft.com/de-de/services/azure-automanage/
+[Automation]: https://azure.microsoft.com/de-de/services/automation/
+[Avere vFXT für Azure]: https://azure.microsoft.com/de-de/services/storage/avere-vfxt/
+[Backup]: https://azure.microsoft.com/de-de/services/backup/
+[Bastion]: https://azure.microsoft.com/de-de/services/azure-bastion/
+[Batch]: https://azure.microsoft.com/de-de/services/batch/
+[Bing Websuche]: https://www.microsoft.com/en-us/bing/apis
+[Blob Storage]: https://azure.microsoft.com/de-de/services/storage/blobs/
+[blockchain retirement]: https://docs.microsoft.com/azure/blockchain/service/migration-guide
+[Blockchain Tokens]: https://azure.microsoft.com/en-us/services/blockchain-tokens/
+[Blockchain Workbench]: https://azure.microsoft.com/features/blockchain-workbench/
+[Blockchain-Dienst]: https://azure.microsoft.com/de-de/services/blockchain-service/
+[Blueprint]: https://azure.microsoft.com/de-de/services/blueprints/
+[Boards]: https://azure.microsoft.com/de-de/services/devops/boards/
+[Bot Services]: https://azure.microsoft.com/de-de/services/bot-services/
+[Cache for Redis]: https://azure.microsoft.com/de-de/services/cache/
+[Cloud Services]: https://azure.microsoft.com/de-de/services/cloud-services/
+[Cloud Shell]: https://azure.microsoft.com/de-de/features/cloud-shell/
+[Codierung]: https://azure.microsoft.com/de-de/services/media-services/encoding/
+[Cognitive Search]: https://azure.microsoft.com/de-de/services/search/
+[Cognitive Services]: https://azure.microsoft.com/de-de/services/cognitive-services/
+[Communications Services]: https://azure.microsoft.com/de-de/services/communication-services/
+[Container Instances]: https://azure.microsoft.com/de-de/services/container-instances/
+[Container Registry]: https://azure.microsoft.com/de-de/services/container-registry/
+[Content Delivery Network]: https://azure.microsoft.com/de-de/services/cdn/
+[Content Moderator]: https://azure.microsoft.com/de-de/services/cognitive-services/content-moderator/
+[Content Protection]: https://azure.microsoft.com/de-de/services/media-services/content-protection/
+[Cosmos DB]: https://azure.microsoft.com/de-de/services/cosmos-db/
+[Cost Management und Abrechnung]: https://azure.microsoft.com/de-de/services/cost-management/
+[Custom Vision]: https://azure.microsoft.com/de-de/services/cognitive-services/custom-vision-service/
+[CycleCloud]: https://azure.microsoft.com/features/azure-cyclecloud/
+[Data Box]: https://azure.microsoft.com/de-de/services/databox/
+[Data Catalog]: https://azure.microsoft.com/de-de/services/data-catalog/
+[Data Factory]: https://azure.microsoft.com/de-de/services/data-factory/
+[Data Lake Analytics]: https://azure.microsoft.com/de-de/services/data-lake-analytics/
+[Data Lake Storage]: https://azure.microsoft.com/de-de/services/storage/data-lake-storage/
+[Data Share]: https://azure.microsoft.com/de-de/services/data-share/
+[Database for MariaDB]: https://azure.microsoft.com/de-de/services/mariadb/
+[Database for MySQL]: https://azure.microsoft.com/de-de/services/mysql/
+[Database for PostgreSQL]: https://azure.microsoft.com/de-de/services/postgresql/
+[Database Migration Service]: https://azure.microsoft.com/de-de/services/database-migration/
+[Databricks]: https://azure.microsoft.com/de-de/services/databricks/
+[Daten-Explorer]: https://azure.microsoft.com/de-de/services/data-explorer/
+[DDoS Protection]: https://azure.microsoft.com/de-de/services/ddos-protection/
+[Dedicated Host]: https://azure.microsoft.com/de-de/services/virtual-machines/dedicated-host/
+[Dedicated HSM]: https://azure.microsoft.com/de-de/services/azure-dedicated-hsm/
+[Defender for IoT]: https://azure.microsoft.com/de-de/services/azure-defender-for-iot/
+[Defender]: https://azure.microsoft.com/de-de/services/azure-defender/
+[DevTest Labs]: https://azure.microsoft.com/de-de/services/devtest-lab/
+[Digital Twins]: https://azure.microsoft.com/de-de/services/digital-twins/
+[Disk Storage]: https://azure.microsoft.com/de-de/services/storage/disks
+[DNS]: https://azure.microsoft.com/de-de/services/dns/
+[etcd]: https://etcd.io/
+[Event Grid]: https://azure.microsoft.com/de-de/services/event-grid/
+[Event Hubs]: https://azure.microsoft.com/de-de/services/event-hubs/
+[ExpressRoute]: https://azure.microsoft.com/de-de/services/expressroute/
+[Externe Azure Active Directory Identitäten]: https://azure.microsoft.com/de-de/services/active-directory/external-identities/
+[Files]: https://azure.microsoft.com/de-de/services/storage/files/
+[Firewall Manager]: https://azure.microsoft.com/de-de/services/firewall-manager/
+[Firewall]: https://azure.microsoft.com/de-de/services/azure-firewall/
+[Formularerkennung]: https://azure.microsoft.com/de-de/services/cognitive-services/form-recognizer/
+[Front Door]: https://azure.microsoft.com/de-de/services/frontdoor/
+[Functions]: https://azure.microsoft.com/de-de/services/functions/
+[FXT Edge Filer]: https://azure.microsoft.com/de-de/services/fxt-edge-filer/
+[Gesichtserkennung]: https://azure.microsoft.com/de-de/services/cognitive-services/face/
+[Gremlin]: https://tinkerpop.apache.org/
+[HDInsight]: https://azure.microsoft.com/de-de/services/hdinsight
+[Health Bot]: https://azure.microsoft.com/de-de/services/bot-services/health-bot/
+[HIPAA BAA]: https://docs.microsoft.com/en-us/compliance/regulatory/offering-hipaa-hitech
+[HL7-FHIR]: https://www.hl7.org/fhir/
+[HPC Cache]: https://azure.microsoft.com/de-de/services/hpc-cache/
+[Information Protection]: https://azure.microsoft.com/de-de/services/information-protection/
+[Internet Analyzer]: https://azure.microsoft.com/de-de/services/internet-analyzer/
+[IoT Central]: https://azure.microsoft.com/de-de/services/iot-central/
+[IoT Edge]: https://azure.microsoft.com/de-de/services/iot-edge/
+[IoT Hub]: https://azure.microsoft.com/de-de/services/iot-hub/
+[IoT Solution Accelerators]: https://azure.microsoft.com/de-de/features/iot-accelerators/
+[Key Vault]: https://azure.microsoft.com/de-de/services/key-vault/
+[Kinect DK]: https://azure.microsoft.com/de-de/services/kinect-dk/
+[Kubernetes Service]: https://azure.microsoft.com/de-de/services/kubernetes-service/
+[Lab Services]: https://azure.microsoft.com/de-de/services/lab-services/
+[Language Understanding]: https://azure.microsoft.com/de-de/services/cognitive-services/language-understanding-intelligent-service/
+[Lastenausgleich]: https://azure.microsoft.com/de-de/products/azure-load-balancing/
+[Lighthouse]: https://azure.microsoft.com/de-de/services/azure-lighthouse/
+[Live Video Analytics]: https://azure.microsoft.com/de-de/services/media-services/live-video-analytics/
+[Live- und On-Demand Streaming]: https://azure.microsoft.com/de-de/services/media-services/live-on-demand/
+[Load Balancer]: https://azure.microsoft.com/de-de/services/load-balancer/
+[Log Analytics]: https://docs.microsoft.com/azure/azure-monitor/logs/log-analytics-overview
+[Logic Apps]: https://azure.microsoft.com/de-de/services/logic-apps/
+[Machine Learning]: https://azure.microsoft.com/de-de/services/machine-learning/
+[Managed Applications]: https://azure.microsoft.com/de-de/services/managed-applications/
+[Managed Storage für Apache Cassandra]: https://azure.microsoft.com/de-de/services/managed-instance-apache-cassandra/
+[Maps]: https://azure.microsoft.com/de-de/services/azure-maps/
+[MariaDB]: https://mariadb.org/
+[Maschinelles Sehen]: https://azure.microsoft.com/de-de/services/cognitive-services/computer-vision/
+[MAUI]: https://devblogs.microsoft.com/dotnet/introducing-net-multi-platform-app-ui/
+[Media Player]: https://azure.microsoft.com/de-de/services/media-services/media-player/
+[Metrics Advisor]: https://azure.microsoft.com/en-us/services/cognitive-services/metrics-advisor/
+[Microsoft Azure Attestation]: https://azure.microsoft.com/de-de/services/azure-attestation/
+[Microsoft Azure Portal]: https://azure.microsoft.com/de-de/features/azure-portal/
+[Microsoft Azure Virtual Machine Scale Sets]: https://azure.microsoft.com/de-de/services/virtual-machine-scale-sets/
+[Microsoft Genomics]: https://azure.microsoft.com/de-de/services/genomics/
+[Microsoft Graph Data Connect]: https://azure.microsoft.com/de-de/services/graph-data-connect/
+[Microsoft HoloLens 2]: https://www.microsoft.com/de-de/hololens
+[Migrate]: https://azure.microsoft.com/de-de/services/azure-migrate/
+[Mobile App]: https://azure.microsoft.com/de-de/features/azure-portal/mobile-app/
+[Mobile Apps]: https://azure.microsoft.com/de-de/services/app-service/mobile/
+[Modular Datacenter]: https://azure.microsoft.com/de-de/products/azure-modular-datacenter/
+[MongoDB]: https://www.mongodb.com/
+[Monitor]: https://azure.microsoft.com/de-de/services/monitor/
+[MySQL]: https://www.mysql.com/
+[NetApp Files]: https://azure.microsoft.com/de-de/services/netapp/
+[Network Watcher]: https://azure.microsoft.com/de-de/services/network-watcher/
+[Object Anchors]: https://azure.microsoft.com/de-de/services/object-anchors/
+[Open Datasets]: https://azure.microsoft.com/de-de/services/open-datasets/
+[Orbital]: https://azure.microsoft.com/de-de/services/orbital/
+[Percept]: https://azure.microsoft.com/de-de/services/azure-percept/
+[Personalisierung]: https://azure.microsoft.com/de-de/services/cognitive-services/personalizer/
+[Pipelines]: https://azure.microsoft.com/de-de/services/devops/pipelines/
+[Plastischer Reader]: https://azure.microsoft.com/de-de/services/cognitive-services/immersive-reader/
+[Policy]: https://azure.microsoft.com/de-de/services/azure-policy/
+[PostgreSQL]: https://www.postgresql.org/
+[Power BI Embedded]: https://azure.microsoft.com/de-de/services/power-bi-embedded
+[Private Link]: https://azure.microsoft.com/de-de/services/private-link/
+[Project Bonsai]: https://azure.microsoft.com/de-de/services/project-bonsai/
+[Pureview]: https://azure.microsoft.com/de-de/services/purview/
+[Purview]: https://azure.microsoft.com/de-de/services/purview/
+[QnA Maker]: https://azure.microsoft.com/de-de/services/cognitive-services/qna-maker/
+[Quantum]: https://azure.microsoft.com/de-de/services/quantum/
+[Queue Storage]: https://azure.microsoft.com/de-de/services/storage/queues/
+[R-Server for HDInsight]: https://azure.microsoft.com/de-de/services/hdinsight/r-server/
+[Red Hat OpenShift]: https://azure.microsoft.com/de-de/services/openshift/
+[Remote Rendering]: https://azure.microsoft.com/de-de/services/remote-rendering/
+[Repos]: https://azure.microsoft.com/de-de/services/devops/repos/
+[Resource Manager]: https://azure.microsoft.com/de-de/features/resource-manager/
+[Resource Mover]: https://azure.microsoft.com/de-de/services/resource-mover/
+[Route Server]: https://azure.microsoft.com/de-de/services/route-server/
+[RTOS]: https://azure.microsoft.com/de-de/services/rtos/
+[SDK's]: https://azure.microsoft.com/de-de/downloads/
+[Security Center]: https://azure.microsoft.com/de-de/services/security-center/
+[Sentinel]: https://azure.microsoft.com/de-de/services/azure-sentinel/
+[Service Bus]: https://azure.microsoft.com/de-de/services/service-bus/
+[Service Fabric]: https://azure.microsoft.com/de-de/services/service-fabric/
+[Service Health]: https://azure.microsoft.com/de-de/features/service-health/
+[SignalR Service]: https://azure.microsoft.com/de-de/services/signalr-service/
+[Site Recovery]: https://azure.microsoft.com/de-de/services/site-recovery/
+[Spatial Anchors]: https://azure.microsoft.com/de-de/services/spatial-anchors/
+[Speicher Explorer]: https://azure.microsoft.com/de-de/features/storage-explorer/
+[Sphere]: https://azure.microsoft.com/de-de/services/azure-sphere/
+[Spracherkennung]: https://azure.microsoft.com/de-de/services/cognitive-services/speech-to-text/
+[Sprachübersetzung]: https://azure.microsoft.com/de-de/services/cognitive-services/speech-translation/
+[Sprechererkennung]: https://azure.microsoft.com/de-de/services/cognitive-services/speech-translation/
+[Spring Cloud]: https://azure.microsoft.com/de-de/services/spring-cloud/
+[SQL Datenbank]: https://azure.microsoft.com/de-de/services/sql-database/
+[SQL Edge]: https://azure.microsoft.com/de-de/services/sql-edge/
+[SQL Managed Instance]: https://azure.microsoft.com/de-de/services/azure-sql/sql-managed-instance/
+[SQL Server auf VM]: https://azure.microsoft.com/de-de/services/virtual-machines/sql-server/
+[Stack Edge]: https://azure.microsoft.com/de-de/products/azure-stack/edge/
+[Stack HCI]: https://azure.microsoft.com/de-de/products/azure-stack/hci/
+[Stack Hub]: https://azure.microsoft.com/de-de/products/azure-stack/hub/
+[Stack]: https://azure.microsoft.com/de-de/overview/azure-stack/
+[Statische Web-Apps]: https://azure.microsoft.com/de-de/services/app-service/static/
+[StorSimple]: https://azure.microsoft.com/de-de/services/storsimple/
+[Stream Analytics]: https://azure.microsoft.com/de-de/services/stream-analytics/
+[Synapse Analytics]: https://azure.microsoft.com/de-de/services/synapse-analytics/
+[Table Storage]: https://azure.microsoft.com/en-us/services/storage/tables/
+[Test Plans]: https://azure.microsoft.com/de-de/services/devops/test-plans/
+[Text-to-Speech]: https://azure.microsoft.com/de-de/services/cognitive-services/text-to-speech/
+[Textanalysen]: https://azure.microsoft.com/de-de/services/cognitive-services/text-analytics/
+[Time Series Insight]: https://azure.microsoft.com/de-de/services/time-series-insights/
+[Traffic Manager]: https://azure.microsoft.com/de-de/services/traffic-manager/
+[Übersetzer]: https://azure.microsoft.com/de-de/services/cognitive-services/translator/
+[Vergleich AKS vs. Service Fabric]: https://docs.microsoft.com/en-us/archive/blogs/azuredev/service-fabric-and-kubernetes-comparison-part-1-distributed-systems-architecture
+[Videoindizierung]: https://azure.microsoft.com/de-de/services/media-services/video-indexer/
+[Virtual Network]: https://azure.microsoft.com/de-de/services/virtual-network/
+[Virtual WAN]: https://azure.microsoft.com/de-de/services/virtual-wan/
+[Virtuelle Citrix-Apps und -Desktops für Azure]: https://azure.microsoft.com/de-de/services/virtual-desktop/citrix-virtual-apps-desktops-for-azure/
+[Virtuelle Computer]: https://azure.microsoft.com/de-de/services/virtual-machines/
+[Virtuelle Data-Science Computer]: https://azure.microsoft.com/de-de/services/virtual-machines/data-science-virtual-machines/
+[Visual Studio App Center]: https://azure.microsoft.com/de-de/services/app-center/
+[VMware Horizon Cloud in Microsoft Azure]: https://azure.microsoft.com/de-de/services/virtual-desktop/vmware-horizon-cloud/
+[VMWare-Lösungen in Azure]: https://azure.microsoft.com/de-de/services/azure-vmware/
+[Vorlagen für Azure Resource Manager]: https://azure.microsoft.com/de-de/services/arm-templates/
+[VPN Gateway]: https://azure.microsoft.com/de-de/services/vpn-gateway/
+[Web Application Firewall]: https://azure.microsoft.com/de-de/services/web-application-firewall/
+[Web-App für Container]: https://azure.microsoft.com/de-de/services/app-service/containers/
+[Windows 10 IoT Services]: https://azure.microsoft.com/de-de/services/windows-10-iot-core/
+[Windows Virtual Desktop]: https://azure.microsoft.com/de-de/services/virtual-desktop/
+[Xamarin]: https://azure.microsoft.com/de-de/features/xamarin/
