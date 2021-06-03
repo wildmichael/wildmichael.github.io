@@ -31,17 +31,17 @@ Microsoft verwendet wird. Allerdings tauchen viele Dienste in den Dokumenten von
 Microsoft unter mehren Gruppen auf. Einerseits macht das Sinn, weil die Dienste
 in verschiedenen Kontexten genutzt werden können. Aber gleichzeitig leidet
 darunter die Übersichtlichkeit. Daher wählte ich die Gruppe, mit der ein Dienst
-am stärksten verbunden ist, und beschrieb in nur dort. Für die meisten Leser es
-eigentlich nach der Lektüre offensichtlich sein, in welchen anderen
+am stärksten verbunden ist, und beschrieb diesen nur dort. Für die meisten Leser
+sollte es eigentlich nach der Lektüre offensichtlich sein, in welchen anderen
 Zusammenhängen ein Dienst auch noch sinnvoll eingesetzt werden kann. Wo
 nötig, versuchte ich diese zu ähnlichen Diensten abzugrenzen. Aus dieser Arbeit
 entstand dann https://wildmichael.github.io/azure-overview.
 
 In diesem Artikel möchte ich diese Übersicht nochmals konzentrierter vorstellen.
-Ich werde aber den Schnitt etwas anders anlegen, indem ich beschreibe, _WAS_ die
+Ich werde aber den Schnitt etwas anders anlegen, indem ich beschreibe, _was_ die
 Azure Cloud kann. Dazu erwähne ich dann jeweils, welche Dienste dafür genutzt
-werden können und gebe Hinweise auf deren Charakteristika. Auch werde ich sehr
-exotische Dienste oder solche, die bald eingestellt werden, weglassen.
+werden können. Auch werde ich sehr exotische Dienste oder solche, die bald
+eingestellt werden, weglassen.
 
 ## Analysen
 
@@ -52,22 +52,23 @@ welche z.B. aus SQL Datenbanken, aber auch unstrukturierten Dateien bestehen
 können. Microsoft setzt hier auf bekannte Open-Source Technologien wie Apache
 Spark, Apache Hadoop, Apache HBase, R und Python.
 
-* [Daten-Explorer]
-* [Databricks]
-* [Synapse Analytics]
 * [Data Factory]
 * [Data Lake Analytics]
+* [Databricks]
+* [Daten-Explorer]
 * [HDInsight]
-* [R-Server for HDInsight]
 * [Microsoft Graph Data Connect]
+* [R-Server for HDInsight]
+* [Synapse Analytics]
 
 ### Daten-Governance und Verwaltung
 
-Grosse Firmen müssen ihre Daten einerseits gut auffindbar machen, andererseits
-diese aber auch vor unerlaubten Zugriffen schützen.
+Heute werden immer mehr Daten gesammelt. Gerade grosse Organisationen müssen
+ihre Daten einerseits gut auffindbar, und damit nutzbar machen. Andererseits
+sollen diese aber auch vor unerlaubten Zugriffen geschützt werden.
 
-* [Pureview]
 * [Data Catalog]
+* [Pureview]
 
 ### Datenstrom-Verarbeitung
 
@@ -83,61 +84,86 @@ Maschinensteuerungen, ausgeführt werden.
 
 Grosse Applikationen generieren grosse Mengen an Log-Daten. Diese Logs können
 unmöglich mehr einzeln gelesen werden, daher müssen sie mit spezialisierten
-Tools analysiert werden.
+Tools statistisch analysiert werden.
 
 * [Log Analytics]
 
 ### Business Intelligence
 
-Dienste und Werkzeuge um die eigenen Geschäftsdaten zu analysieren, aber auch,
-um diese unter eigenem Namen in Produkte einzubauen.
+In der Azure Cloud gibt es Dienste und Werkzeuge um die eigenen Geschäftsdaten
+zu analysieren. Das self-service Analysetool kann aber auch unter eigenem Namen
+(d.h. als _white-label_ Produkt) in eigene Produkte eingebaut werden.
 
 * [Analysis Services]
 * [Power BI Embedded]
 
 ## Rechnerinfrastruktur
 
-Wie in fast jeder anderen Cloud, können auch in Azure Rechner/Server als Dienst
-gemietet werden. Dies kann notwendig oder von Vorteil sein, wenn sonst kein
-Angebot die funktionalen Anforderungen, oder aber auch die
-Leistungsanforderungen, nicht erfüllt. Oder z.B. aber auch, wenn
-Legacy-Anwendungen in die Cloud migriert werden sollen. Mit all diesen Diensten
-übernimmt der Kunde die Verantwortung für Updates und Wartung des
-Betriebssystems. 
+Wie in fast jeder anderen Cloud können auch in Azure Rechner bzw. Server als
+Dienst gemietet werden. Dies kann notwendig oder von Vorteil sein, wenn sonst
+kein Angebot die funktionalen Anforderungen, oder aber auch die
+Leistungsanforderungen, erfüllt. Oder z.B. aber auch, wenn Legacy-Anwendungen in
+die Cloud migriert werden sollen. Mit all diesen Diensten übernimmt der Kunde
+die Verantwortung für Updates und Wartung des Betriebssystems. 
 
 * [CycleCloud]
-* [VMWare-Lösungen in Azure]
-* [Virtuelle Computer]
-* [Microsoft Azure Virtual Machine Scale Sets]
 * [Dedicated Host]
-* [Windows Virtual Desktop]
-* [VMware Horizon Cloud in Microsoft Azure]
+* [Microsoft Azure Virtual Machine Scale Sets]
 * [Virtuelle Citrix-Apps und -Desktops für Azure]
+* [Virtuelle Computer]
+* [VMware Horizon Cloud in Microsoft Azure]
+* [VMWare-Lösungen in Azure]
+* [Windows Virtual Desktop]
 
 ## Betrieb von Anwendungen
 
 ### Hosting von Applikationen
 
-Diese Dienste erlauben dem Kunden das Betreiben von Anwendungen auf von
+Diese Dienste erlauben dem Kunden den Betrieb von Anwendungen auf von
 Microsoft verwalteter Infrastruktur. D.h. der Kunde ist im Gegensatz zu den
 zuvor erwähnten Diensten, nicht für die Updates und Wartung des Betriebssystems
 verantwortlich.
 
-* [Spring Cloud]
 * [Cloud Services]
-* [SQL Server auf VM]
 * [Mobile Apps]
+* [Spring Cloud]
+* [SQL Server auf VM]
 
 ### Microservices und Container
 
-* [Service Fabric]
+Für sogenannte _cloud native_ Anwendungen, Microservice und Service-orientierte
+Architekturen bieten sich mehrere Dienste, mit teils deutlich überlappender
+Funktionalität an. Einerseits leidet da die Übersichtlichkeit, andererseits
+kann man sich so die am besten passende Lösung auswählen. Einige der Dienste
+erlauben es auch, eher traditionelle Anwendungen in eine Microservice- oder
+Cloud-Native-Landschaft zu überführen.
+
+* [Container Instances]
+* [Container Registry]
 * [Kubernetes Service]
 * [Red Hat OpenShift]
-* [Container Instances]
+* [Service Fabric]
 * [Web-App für Container]
-* [Container Registry]
 
 ### Serverlose Anwendungen
+
+Serverlose Anwendungen sind wohl einen der wichtigsten Innovationen der letzten
+Jahre im Cloud Bereich. Obwohl ich hier nur einen einzigen Dienst aufgeführt
+habe kann ich gar nicht genügend hervorheben, wie stark serverlose Architekturen
+ganze Bereiche der IT transformieren. Mit Azure Functions können
+ereignisgesteuerte Funktionen erstellt werden. Diese werden nicht fixen
+Ressourcen zugewiesen, sondern die Azure Cloud führt sie auf dynamisch zur
+Verfügung gestellten Ressourcen aus und kann diese so auch nach Bedarf
+skalieren. Wird die Funktion nicht ausgeführt fallen auch keine Kosten an. Als
+weiteren Vorteil lassen sich die Funktionen über sogenannte Bindings rein
+deklarativ an Daten-Quellen und Daten-Senken anbinden, ohne dass der
+Programmierer die Daten explizit lesen oder schreiben muss. Dadurch fällt sehr
+viel Code einfach weg. Es stehen sehr viele Ereignisse zur Verfügung, welche die
+Ausführung einer Funktion veranlassen. Dies können z.B. HTTP-Aufrufe,
+Datenbankmodifikationen, Änderungen im Blob Storage oder Nachrichten im Event
+Grid, IoT Hub, Queue Storage, etc. pp. sein. Ich bin fest davon überzeugt, dass
+die Azure Functions die Zukunft der Anwendungsentwicklung und
+Unternehmensarchitektur stark beeinflussen und verändern werden. 
 
 * [Functions]
 
@@ -147,15 +173,15 @@ Moderne Applikations-Architekturen und Designs beherzigen oft den API-first
 Ansatz. Dies erlaubt es auch viel einfacher, Dienste miteinander zu verknüpfen
 und Automatisierungen zu bauen. So können auch Frontends von dem Backend
 getrennt werden, und das Frontend z.B. nur noch als statische Webseite
-veröffentlicht werden, welche dann auf per REST API auf eine separate API als
-Backend zurückgreift. Sogenannte Microservice- und Service-Mesh-Architekturen,
-obwohl nicht gleich, benötigen eine oder mehrere Gateways. Bidirektionale
-Kommunikation wird auch immer mehr, z.B. für Chats und Benachrichtigungen, zur
-Anzeige von Live-Daten, etc. benötigt. Für all diese Bedürfnisse bietet
-Microsoft in der Azure Cloud Dienste.
+veröffentlicht werden, welche dann per REST auf eine separate API als Backend
+zurückgreift. Sogenannte Microservice- und Service-Mesh-Architekturen, obwohl
+nicht gleich, benötigen ein oder mehrere Gateways. Bidirektionale Kommunikation
+wird auch immer mehr, z.B. für Chats und Benachrichtigungen, zur Anzeige von
+Live-Daten, etc. benötigt. Für all diese Bedürfnisse bietet Microsoft in der
+Azure Cloud Dienste.
 
-* [API-Apps]
 * [API Management]
+* [API-Apps]
 * [App Service]
 * [SignalR Service]
 * [Statische Web-Apps]
@@ -166,9 +192,9 @@ Microsoft in der Azure Cloud Dienste.
 
 Eine der wohl wichtigsten Komponenten für eine Vielzahl von Applikationen ist
 die Datenbank. Entsprechend gross ist das Angebot, welches verschiedene Formen
-von dem Microsoft-eigenen SQL Server, aber auch verschiedene open-source SQL
+des Microsoft-eigenen SQL Server, aber auch verschiedene open-source SQL
 Datenbanken und sogenannte No-SQL Datenbanken, wie Key-Value-Stores, Dokumenten-
-und Graphendatenbanken umfasst.
+und Graphendatenbanken, umfasst.
 
 * [API für FHIR] (Gesundheitsdaten)
 * [Cache for Redis]
@@ -176,15 +202,15 @@ und Graphendatenbanken umfasst.
 * [Database for MariaDB]
 * [Database for MySQL]
 * [Database for PostgreSQL]
+* [Managed Storage für Apache Cassandra]
 * [SQL Datenbank]
 * [SQL Edge]
 * [SQL Managed Instance]
 * [Table Storage]
-* [Managed Storage für Apache Cassandra]
 
 ### Andere Speicher
 
-Um Daten in unstrukturierten, z.B. in Dateisystem ähnlichen Strukturen, zu
+Um Daten in unstrukturierten, z.B. in Dateisystem-ähnlichen Strukturen, zu
 speichern gibt es für unterschiedliche Anwendungsszenarien spezialisierte
 Dienste. Es können z.B. traditionelle Netzwerklaufwerke in die Cloud migriert
 werden. In sogenannten Blob-Speichern können Anwendungen Daten ablegen, für
@@ -193,26 +219,20 @@ Dokumentenuploads). Es können aber auch Archive und Backups gespeichert werden.
 Für wissenschaftliche Simulationen stehen speziell schnelle Speicherdienste
 bereit.
 
-Falls sehr grosse Datenmengen in die Cloud migriert werden sollen und dies über
-das Netzwerk zu lange dauern würde, stellt Microsoft auch physische Speicher
-verschiedener Grösse zur Verfügung, mit welchen die Daten in das
-Cloud-Datencenter transportiert werden können.
-
 Sollen Daten sicher mit Drittparteien geteilt werden, stellt auch Microsoft hier
 einen Dienst bereit.
 
 * [Archive Storage]
 * [Avere vFXT für Azure]
 * [Backup]
+* [Blob Storage]
 * [Data Lake Storage]
 * [Data Share]
+* [Disk Storage]
 * [Files]
 * [FXT Edge Filer]
 * [HPC Cache]
 * [NetApp Files]
-* [Blob Storage]
-* [Data Box]
-* [Disk Storage]
 * [Queue Storage]
 * [Speicher Explorer]
 * [StorSimple]
@@ -223,164 +243,217 @@ Viele Applikationen laufen als Stapelverarbeitung. Wie z.B. Lohnabrechnungen,
 wissenschaftliche Simulationen oder Berechnen von Portfoliorisiken. Oftmals
 benötigen diese Anwendungen viel Rechnerleistung, welche dann zwischen den
 Durchläufen brach liegt und Kosten verursacht. Mit diesem Dienst zur
-Stapelverarbeitung können die Ressourcen automatisch skaliert werden.
+Stapelverarbeitung können die Ressourcen zusätzlich automatisch skaliert werden.
 
 * [Batch]
 
 ## Entwicklerwerkzeuge und DevOps
 
-Für Entwickler bietet Microsoft in Azure einige Dienste an. Einerseits,
-für das agile Projektmanagement, Versionskontrolle und Build Server für
-Continuous Integration und Deployment, aber auch Dienste, um Softwarepakete
-für .NET, NPM, und Python zu veröffentlichen oder im Team zu teilen. Weiter
-gibt es Dienste zur Bereitstellung von standardisierten Entwicklungs- und
-Testumgebungen. Manuelle und explorative Tests lassen sich auch planen und
-protokollieren. All diese Dienste werden in dem Azure DevOps Portal
-zusammengefasst.
+Für Entwickler bietet Microsoft in Azure einige Dienste an. Einerseits, für das
+agile Projektmanagement, Versionskontrolle und Build Server für Continuous
+Integration und Deployment, aber auch Dienste, um Softwarepakete für .NET, NPM,
+und Python zu veröffentlichen oder im Team zu teilen.  Weiter gibt es Dienste
+zur Bereitstellung von standardisierten Entwicklungs- und Testumgebungen.
+Manuelle und explorative Tests lassen sich auch planen und protokollieren. All
+diese Dienste werden in dem Azure DevOps Portal zusammengefasst.
 
 Für Schulungen, Kurse, Hackathons, etc. lassen sich bedarfsgesteuert
 vorkonfigurierte virtuelle Maschinen bereitstellen.
 
 Um Applikationen in Azure Dienste einzubinden und um die Azure Ressourcen
-programmgesteuert zu verwalten bietet Microsoft
-SDK's für eine grosse Anzahl Programmiersprachen an und stellt
-Kommandozeilentools für Scripting bereit.
+programmgesteuert zu verwalten bietet Microsoft SDK's für eine grosse Anzahl
+Programmiersprachen an und stellt Kommandozeilentools für Scripting bereit.
+Damit lässt sich das _Infrastructure-as-Code_ Paradigma umsetzen.
 
-Um die Anwendungskonfiguration zu vereinfachen, bietet Azure einen Dienst, um
+Um die Anwendungskonfiguration zu vereinfachen bietet Azure einen Dienst, um
 die Parameter zentral zu verwalten.
 
+* [App Configuration]
 * [Artifacts]
 * [Boards]
 * [DevTest Labs]
+* [Lab Services]
 * [Pipelines]
 * [Repos]
-* [Test Plans]
-* [Lab Services]
 * [SDK's]
-* [App Configuration]
+* [Test Plans]
 
 ## Hybrid und Multicloud
 
-Viele Anwendungsszenarien verlangen, dass Azure Ressourcen mit Computer,
+Viele Anwendungsszenarien verlangen, dass Azure Ressourcen mit Computern,
 Programmen oder Geräten ausserhalb der Cloud zusammenarbeiten. Z.B. können das
-IoT Geräte wie Anlagensteuerungen, Kassensystem, noch nicht in die Cloud
-migrierte on-premise Dienste, etc. pp. sein. Oder aber eine Firma will sich
-nicht auf einen Cloud-Anbieter festlegen, möglicherweise werden aus
-Verfügbarkeitsgründen sogar die gleichen Applikationen in mehreren Clouds
-redundant betrieben. All diese Szenarien stellen besondere Herausforderungen an
-das Verwalten der Dienste, die Überprüfung von Policies und Compliance
-Richtlinien und die Sicherheit. Mit den von Microsoft angebotenen Diensten kann
-man diese Aufgaben unter einer vereinheitlichten, zentralen Stelle aus erfüllen.
-Andere Dienste von Microsoft in diesem Themenfeld ermöglichen es, Azure Dienste
-auch ausserhalb der Cloud zu nutzen, z.B. auf Edge-Geräten, im eigenen Datacenter
-oder an Orten ohne Netzwerkanbindung.
+IoT Geräte (wie Anlagensteuerungen, Messanlagen, etc.), Kassensysteme, noch
+nicht in die Cloud migrierte on-premise Dienste, etc. pp. sein. Oder aber eine
+Organisation will sich nicht auf einen Cloud-Anbieter festlegen, möglicherweise
+werden aus Verfügbarkeitsgründen sogar die gleichen Applikationen in mehreren
+Clouds redundant betrieben. All diese Szenarien stellen besondere
+Herausforderungen an das Verwalten der Dienste, die Überprüfung von Policies und
+Compliance Richtlinien und die Sicherheit. Mit den von Microsoft angebotenen
+Diensten kann man diese Aufgaben unter einer vereinheitlichten, zentralen Stelle
+aus erfüllen. Andere Dienste von Microsoft in diesem Themenfeld ermöglichen es,
+Azure Dienste auch ausserhalb der Cloud zu nutzen, z.B. auf Edge-Geräten, im
+eigenen Datacenter oder an Orten ohne Netzwerkanbindung.
 
 * [Arc]
 * [ExpressRoute]
-* [Stack]
+* [Modular Datacenter]
 * [Stack Edge]
 * [Stack HCI]
 * [Stack Hub]
-* [Modular Datacenter]
+* [Stack]
 
 ## Identität
 
 Mit Azure Active Directory bietet Microsoft einen sehr umfangreichen Dienst zur
 Authentifizierung und Autorisierung mit modernsten Protokollen wie OpenID
-Connect und Multifaktor-Authentifizierung (MFA). Weiter bietet Microsoft
-Domänenkontroller zur Verwaltung von virtuellen Maschinen in der Azure Cloud
-bereit. Auch können Zugriffe über Organisationsgrenzen hinweg an externe
+Connect, OAuth 2.0 und Multifaktor-Authentifizierung (MFA). Weiter bietet
+Microsoft Domänenkontroller zur Verwaltung von virtuellen Maschinen in der Azure
+Cloud bereit. Auch können Zugriffe über Organisationsgrenzen hinweg an externe
 Personen, z.B. Kunden oder Partnern gewährt und verwaltet werden.
 
-* [Active Directory]
-* [Active Directory Domain Services]
+* [Azure Active Directory Domain Services]
+* [Azure Active Directory]
 * [Externe Azure Active Directory Identitäten]
 
 ## Integration, Messaging, Events
 
 Microsoft bietet mehrere Dienste an, mit denen Applikationen untereinander
 mittels Ereignissen und Nachrichten kommunizieren können. Je nach Charakteristik
-eignen sich diese eher für wenige grosse, komplexe Datenpakete, oder aber für
-kleine Ereignisse in sehr grosser Zahl. Diese können genutzt werden, um
+eignen sich diese eher für seltene grosse und komplexe Datenpakete, oder aber
+für kleine Ereignisse in sehr hoher Frequenz. Diese können genutzt werden, um
 Applikationen in kleine, lose gekoppelte Teile zu zerlegen oder bestehende
 Applikationen miteinander zu integrieren. Die Ereignisse oder Nachrichten können
 aber z.B. auch von IoT Geräten erzeugt werden.
 
-* [Service Bus]
 * [Event Grid]
-* [Logic Apps]
 * [Event Hubs]
+* [Logic Apps]
 * [Queue Storage]
+* [Service Bus]
 
 ## Internet of Things (IoT)
 
-Unter der Flagge _IoT_ bietet Microsoft sehr unterschiedliche
-Dienste an. Diese reichen von der Erstellung, Auslieferung und Wartung der
-Software auf IoT Geräten über die Verwaltung ebendieser Geräte bis hin zur
-Datenverarbeitung der durch die Geräte erzeugten Daten. Microsoft bietet sogar
-ein eigenes real-time Betriebssystem für Mikrokontroller an. Natürlich können
-die Geräte auch überwacht werden. Um die Geräte und die Kommunikation
-abzusichern bietet Microsoft auch mehrere Dienstleistungen an. Weiter können
-sogenannte Digital Twins erstellt werden, mit denen ganze Systeme in Echtzeit
-simuliert werden können, um z.B. sonst nicht messbare Grössen zu erfassen, die
-Effizienz von Anlagen zu maximieren oder deren Wartung zu optimieren. Letztlich
-können auch AI/Machine-Learning-Anwendungen auf IoT Geräten eingesetzt und mit
-den AI/Machine-Learning Diensten in der Cloud integriert werden.
+Unter der Flagge _IoT_ bietet Microsoft sehr unterschiedliche Dienste an. Diese
+reichen von der Erstellung, Auslieferung und Wartung der Software auf IoT
+Geräten über die Verwaltung ebendieser Geräte bis hin zur Datenverarbeitung der
+durch die Geräte erzeugten Daten. Microsoft bietet sogar ein eigenes real-time
+Betriebssystem für Mikrokontroller an. Natürlich können die Geräte auch
+überwacht werden. Um die Geräte und die Kommunikation abzusichern bietet
+Microsoft auch mehrere Dienstleistungen an. Weiter können sogenannte Digital
+Twins erstellt werden, mit denen ganze Systeme in Echtzeit simuliert werden
+können, um z.B. sonst nicht messbare Grössen zu erfassen, die Effizienz von
+Anlagen zu maximieren oder deren Wartung zu optimieren. Letztlich können auch
+AI/Machine-Learning-Anwendungen auf IoT Geräten eingesetzt und mit den
+entsprechenden Diensten in der Cloud integriert werden.
 
+* [Defender for IoT]
 * [Digital Twins]
 * [IoT Central]
 * [IoT Edge]
 * [IoT Hub]
 * [IoT Solution Accelerators]
+* [Percept]
 * [RTOS]
 * [Sphere]
 * [Time Series Insight]
 * [Windows 10 IoT Services]
-* [Defender for IoT]
-* [Percept]
 
 ## AI und Machine-Learning
 
 In den letzten Jahren ist das Feld von AI und maschinellem Lernen förmlich
 explodiert. Und so ist hat auch Microsoft auf der Azure Cloud ein sehr grosses
 Angebot an Diensten, die sich im weitesten Sinne mit künstlicher Intelligenz und
-maschinellem Lernen beschäftigen. Diese reichen von der Bereitstellung von
-Infrastruktur für das Trainieren eigener Modelle bis hin zu deren produktivem
-Einsatz, bis hin zu fix fertigen Lösungen, z.B. zur Verarbeitung und Analyse von
-Text, Sprache, Bildern und Videos. Es können auch relativ einfach eigene Bots,
-z.B. für Chats, oder Modelle zur Anomalie-Erkennung, Inhaltsmoderation oder
-KI-gestützten Suche implementiert werden. Microsoft bietet auch eine kuratierte
-Sammlung öffentlich zugänglicher Datensätze an. Viele der Dienste können in der
-Cloud, im eigenen Datacenter oder auf Edge-Geräten eingesetzt werden.
+maschinellem Lernen beschäftigen. Microsoft bietet sowohl fix fertige Dienste
+"aus der Konserve" an, als auch Unterstützung für den gesamten Lebenszyklus
+eigener Modelle und Anwendungen in diesem Bereich. Die Dienste können auch sehr
+einfach mit anderen Azure Produkten integriert werden.
 
-* [Bot Services]
-* [Cognitive Search]
+### Entwicklung von Modellen und Anwendungen
+
+Microsoft bietet für die Entwicklung von neuen Machine Learning Modellen und
+Anwendungen sowohl vorbereitete Infrastruktur, als auch Dienste, welche es
+erlauben, mit nur wenig (oder gar keinen) Programmierkenntnissen neue Modelle
+oder sogar ganze Anwendungen zu entwickeln.
+
 * [Machine Learning]
-* [Open Datasets]
-* [Cognitive Services]
+* [Project Bonsai]
+* [Virtuelle Data-Science Computer]
+
+### Daten
+
+Für die Analyse von Datenreihen bietet Microsoft einen Dienst um Anomalien zu
+erkennen, und einen Ratgeber, welcher aufgrund der Daten geeignete Metriken und
+KPI vorschlägt, welche dann zur Analyse und Optimierung genutzt werden können.
+
 * [Anomalieerkennung]
-* [Content Moderator]
 * [Metrics Advisor]
-* [Personalisierung]
+
+### Sprache und Dokumente
+
+Die automatische Analyse und Verarbeitung von natürlicher Sprache und
+unstrukturierten Dokumenten nimmt einen grossen Platz ein in der Welt der Azure
+ML und KI Dienste. Das fängt bei Text-to-Speech und Speech-to-Text an, geht über
+Inhaltsmoderation und Übersetzung hin zu semantischen und Meinungs- bzw.
+Stimmungs-Analysen, Erkennung von Formularen und das automatischen Generieren
+von Frage-Antwort-Diensten aufgrund von Handbüchern und Dokumentationen.
+
+* [Content Moderator]
+* [Formularerkennung]
 * [Language Understanding]
 * [Plastischer Reader]
 * [QnA Maker]
-* [Textanalysen]
-* [Übersetzer]
 * [Spracherkennung]
-* [Text-to-Speech]
 * [Sprachübersetzung]
 * [Sprechererkennung]
+* [Text-to-Speech]
+* [Textanalysen]
+* [Übersetzer]
+
+### Suche
+
+Einerseits bietet Microsoft die pfannenfertige Bing Suche als Produkt für die
+eigenen Daten an, andererseits gibt es auch einen Dienst mit dem man auch eigene
+KI-gestützte Suchanwendungen erstellen kann.
+
+* [Bing Websuche]
+* [Cognitive Search]
+
+### Bots
+
+Heute binden viele Anwendungen sogenannte Bots ein, welche es dem Benutzer
+erlauben mittels natürlicher Sprache mit der Anwendung zu interagieren.
+Microsoft selbst setzt diese Technologie z.B. sehr stark in der Teams
+Kollaborationsplattform ein. Mit den Bot Services lassen sich ohne viel Aufwand
+solche Bots für die eigene Anwendung erstellen. Für den Gesundheitsbereich gibt
+es einen spezialisierten Dienst, der z.B. bei der Diagnose und Patiententriage Unterstützung bieten kann.
+
+* [Bot Services]
+* [Health Bot]
+
+### Bild und Video
+
+Mit den Azure Diensten zur Bild-Erkennung und Video-Analyse können z.B.
+Diagnose-Anwendungen für Industrieprozesse erstellt werden, oder eigene Dienste
+welche Gesichtserkennung einsetzen. Bilder und Videos können klassifiziert
+werden.
+
 * [Custom Vision]
-* [Formularerkennung]
 * [Gesichtserkennung]
 * [Maschinelles Sehen]
 * [Videoindizierung]
-* [Bing Websuche]
-* [Virtuelle Data-Science Computer]
+
+### Weiteres
+
+Weiter gibt es AI und ML Dienste spezialisiert auf Gentechnik und Forschung. Mit
+kurierten und aufbereiteten Datensätzen ermöglicht es Microsoft schnell eigene
+Modelle zu trainieren. Letztlich gibt es noch einen Dienst, der ein ML Modell
+nutzt, um eigenen Anwendungen für die Benutzer, gemäss ihren Bedürfnissen und
+Präferenzen, zu personalisieren.
+
 * [Microsoft Genomics]
-* [Project Bonsai]
-* [Health Bot]
+* [Open Datasets]
+* [Personalisierung]
+
 
 ## Multimedia
 
@@ -389,24 +462,32 @@ Wiedergabe von Multimedia-Inhalten angeboten, welche z.B. auch schon für die
 Übertragung von den Olympischen Spielen genutzt wurden. Weiter können diese
 Inhalte mit DRM vor Diebstahl geschützt werden.
 
-* [Media Player]
+* [Codierung]
 * [Content Delivery Network]
 * [Content Protection]
-* [Codierung]
-* [Live- und On-Demand Streaming]
 * [Live Video Analytics]
+* [Live- und On-Demand Streaming]
+* [Media Player]
 
 ## Migration
 
 Um grossen Organisationen die komplexe und mit erheblichen Risiken verbundene
 Migration in die Cloud zu erleichtern, bietet Microsoft sehr viele Dienste an,
 welche z.B. den Betrieb von Legacy-Anwendungen z.B. mittels Lift-and-Shift
-ermöglichen. Um den Gesamtüberblick über das Vorhaben _Migration in die Cloud_
-zu behalten, bietet Microsoft aber auch spezialisierte Dienste an, mit deren
-Hilfe sich das Unterfangen Planen lässt. Workloads können ermittelt bewertet,
-geplant und verfolgt werden. Sämtliche Aktionen werden rückverfolgbar
-aufgezeichnet und können so für Audits verwendet werden.
+ermöglichen. Den Kunden soll der Einstieg ja möglichst leicht gemacht werden.
 
+Um den Gesamtüberblick über die Migration in die Cloud zu behalten, bietet
+Microsoft aber auch spezialisierte Dienste an, mit deren Hilfe sich das
+Unterfangen Planen lässt. Workloads können ermittelt, bewertet, geplant und
+verfolgt werden. Sämtliche Aktionen werden rückverfolgbar aufgezeichnet und
+können so für Audits verwendet werden.
+
+Falls sehr grosse Datenmengen in die Cloud migriert werden sollen und dies über
+das Netzwerk zu lange dauern würde, stellt Microsoft auch physische Speicher
+verschiedener Grösse zur Verfügung, mit welchen die Daten in das
+Cloud-Datencenter transportiert werden können.
+
+* [Data Box]
 * [Migrate]
 
 ## Mixed Reality
@@ -417,29 +498,29 @@ _Pokémon Go_, Navigationssysteme aber auch ganze Produktionsanlagen, nutzen
 mittlerweile die Möglichkeiten, welche VR- und AR-Brillen, Mobiltelefone und
 Tablets bieten. Mit den von Microsoft angebotenen Diensten lassen sich virtuelle
 Inhalte z.B. an physische Orte oder Objekte binden. Mittels Analyse von Sprache
-und maschinellem Sehen lassen sich auch Eingaben Erfassen. Das Rendering für
+und maschinellem Sehen lassen sich auch Eingaben erfassen. Das Rendering für
 z.B. komplexe 3D-Modelle kann remote in der Cloud erfolgen und die so
 entstandenen Bilder auf die Datenbrillen übertragen werden.
 
 * [Kinect DK]
+* [Object Anchors]
 * [Remote Rendering]
 * [Spatial Anchors]
-* [Object Anchors]
 
 ## Mobile
 
 Die meisten in der Azure Cloud angebotenen Dienste lassen sich
 selbstverständlich auch im Kontext von Mobile-Apps nutzen, z.B. um deren Backend
-zu erstellen. Dennoch bietet Microsoft einige, speziell auf die Erstellung von
+zu erstellen. Dennoch bietet Microsoft einige speziell auf die Erstellung von
 Mobile-Applikationen ausgerichtete Dienste an. Diese reichen von Karten- und
-Navigationsdiensten über Programmier-Bibliotheken und Werkzeugen und
-Kommunikationsplattformen, welche es dem Entwickler ermöglichen, Video, Chat,
+Navigationsdiensten über Programmier-Bibliotheken und Werkzeugen hin zu
+Kommunikationsplattformen, welche es dem Entwickler ermöglichen Video, Chat,
 SMS und Telefonie in der App zu nutzen.
 
+* [Communications Services]
 * [Maps]
 * [Visual Studio App Center]
 * [Xamarin]
-* [Communications Services]
 
 ## Netzwerk
 
@@ -451,54 +532,54 @@ Firewalls und Load-Balancer. Ein Dienst kombiniert das Content Distribution
 Network (CDN) von Azure mit Sicherheitsdiensten wie Web-Application Firewall,
 SSL-Offloading und Schutz vor DDoS Angriffen. Es können private Tunnel
 eingerichtet werden, um on-premise Netzwerke und Ressourcen mit denen in der
-Cloud zu verbinden. Um z.B.  Filialen miteinander zu verbinden können virtuelle
+Cloud zu verbinden. Um z.B. Filialen miteinander zu verbinden, können virtuelle
 WANs angelegt werden. Der Netzwerkverkehr kann überwacht und gesteuert, die
 verwendeten Ressourcen bedarfsgesteuert skaliert werden. Routinginformation kann
 automatisch zwischen on-premise und Cloud-Netzwerken ausgetauscht werden.
 Entlegene Orte ohne Netzwerkinfrastruktur können mittels Satellitenverbindung in
-ein Netzwerk eingebunden werden.  Betreiber von eigenen Kommunikationssatelliten
+ein Netzwerk eingebunden werden. Betreiber von eigenen Kommunikationssatelliten
 können deren Einsatz, die Erdstationen etc. planen und als eigene Dienste auf
 Azure anbieten.
 
 * [Application Gateway]
 * [Bastion]
 * [DNS]
-* [Firewall]
-* [Lastenausgleich]
 * [Firewall Manager]
+* [Firewall]
 * [Front Door]
 * [Internet Analyzer]
-* [Private Link]
+* [Lastenausgleich]
+* [Load Balancer]
 * [Network Watcher]
+* [Orbital]
+* [Private Link]
+* [Route Server]
 * [Traffic Manager]
 * [Virtual Network]
 * [Virtual WAN]
 * [VPN Gateway]
 * [Web Application Firewall]
-* [Orbital]
-* [Route Server]
-* [Load Balancer]
 
 ## Sicherheit
 
 Hier bietet Microsoft eine Reihe von Diensten an welche von sehr spezialisiert
 bis hin zur eierlegenden Wollmilchsau gehen. Es gibt Abwehrmechanismen gegen
-DDoS Attacken, Hardware Sicherheitsmodule, Dienste zum Schutz von Informationen,
-Speicher für Anwendungspasswörter, Zertifikate und ähnliches, aber auch
-KI-gestützte Analysewerkzeuge. Schliesslich gibt es eine zentrale Übersicht über
-die Sicherheit von Azure Diensten und hybriden Ressourcen, welche auch Berichte
-für Compliance-Nachweise erstellt. Microsoft bietet auch einen Dienst zur
-Sicherstellung der Integrität und Vertrauenswürdigkeit von Ressourcen ausserhalb
-der Cloud an, zum Beispiel von Edge Geräten.
+DDoS Attacken, hardwarebasierte Sicherheitsmodule, Dienste zum Schutz von
+Informationen, Speicher für Anwendungspasswörter, Zertifikate und ähnliches,
+aber auch KI-gestützte Analysewerkzeuge. Schliesslich gibt es eine zentrale
+Übersicht über die Sicherheit von Azure Diensten und hybriden Ressourcen, welche
+auch Berichte für Compliance-Nachweise erstellt. Microsoft bietet auch einen
+Dienst zur Sicherstellung der Integrität und Vertrauenswürdigkeit von Ressourcen
+ausserhalb der Cloud an, zum Beispiel von Edge Geräten.
 
-* [Defender]
 * [DDoS Protection]
 * [Dedicated HSM]
+* [Defender]
 * [Information Protection]
-* [Sentinel]
 * [Key Vault]
-* [Security Center]
 * [Microsoft Azure Attestation]
+* [Security Center]
+* [Sentinel]
 
 ## Verwaltung, Automatisierung und Governance
 
@@ -507,12 +588,12 @@ der Cloud an, zum Beispiel von Edge Geräten.
 In der Azure Cloud lassen sich viele Aufgaben und Dienste automatisieren und
 mittels Vorlagen und Schablonen konsistent und vereinfacht erstellen.
 
+* [Automanage]
 * [Automation]
 * [Blueprint]
-* [Vorlagen für Azure Resource Manager]
 * [Cloud Shell]
-* [Automanage]
 * [Resource Mover]
+* [Vorlagen für Azure Resource Manager]
 
 ### Governance
 
@@ -554,24 +635,26 @@ auf die "Lift-and-Shift" Szenarien beziehen. D.h. bestehende Anwendungen und
 Ressourcen werden mit möglichst wenig Modifikation und Aufwand in die Cloud
 migriert. Allerdings kann dies nur der erste Schritt sein. Man spart sich
 dadurch bestenfalls die Investitionskosten in eigene Hardware und deren Wartung,
-aber dadurch verbessert sich weder die Unternehmens- noch die
-Applikationsarchitektur und eine Integration in andere Dienste ist immer noch
-herausfordernd. Eine echte Cloud-Strategie sollte diese Dienste nur für eine
-Übergangsphase als tragend betrachten.
+aber weder verbessert sich die Unternehmens- noch die Applikationsarchitektur
+und eine Integration in andere Dienste ist immer noch schwierig. Eine echte
+Cloud-Strategie sollte diese Dienste nur für eine Übergangsphase als tragend
+betrachten.
 
 Die Herausforderung liegt dann darin, die Anwendungen "neu zu denken" und die
-bekannten Trampelpfade zu verlassen. Die vielen "Legobausteine" wollen geschickt
-kombiniert werden, um viel rascher und mit sehr wenig Code zu sehr ausgereiften
+bekannten Trampelpfade zu verlassen. Die vielen Legobausteine wollen geschickt
+kombiniert werden, um viel rascher und mit sehr wenig Code zu ausgereiften
 und robusten Lösungen zu kommen. Die Gefahr liegt darin, dass man dazu tendiert,
 vertraute Lösungsansätze zu bevorzugen und so den Lösungsraum unnötig und
-ungünstig einschränkt. Der sprichwörtliche Junge mit einem Hammer, für den jeder
-Gegenstand wie ein Nagel ausschaut. Hier lohnt es sich den Spieltrieb
-auszuleben, die neuen Möglichkeiten in kleinen Prototypen und "Wegwerfprojekten"
-auszuprobieren. Aus dem einfachen Grund, dass man das, was man nicht kennt, auch
+ungünstig einschränkt. Andererseits eignet sich der gerade zuletzt erlernte
+Dienst nicht für alle Anwendungen &ndash; das Problem des sprichwörtlichen
+Jungen mit einem Hammer, für den jeder Gegenstand wie ein Nagel ausschaut. Hier
+lohnt es sich den Spieltrieb auszuleben, die neuen Möglichkeiten in kleinen
+Prototypen und "Wegwerfprojekten" auszuprobieren und deren Vor- und Nachteile zu
+erforschen. Aus dem einfachen Grund, dass man das, was man nicht kennt, auch
 nicht sinnvoll einsetzen kann.
 
-[Active Directory Domain Services]: https://azure.microsoft.com/de-de/services/active-directory-ds/
-[Active Directory]: https://azure.microsoft.com/de-de/services/active-directory/
+[Azure Active Directory Domain Services]: https://azure.microsoft.com/de-de/services/active-directory-ds/
+[Azure Active Directory]: https://azure.microsoft.com/de-de/services/active-directory/
 [Advisor]: https://azure.microsoft.com/de-de/services/advisor/
 [Analysis Services]: https://azure.microsoft.com/de-de/services/analysis-services/
 [Anomalieerkennung]: https://azure.microsoft.com/de-de/services/cognitive-services/anomaly-detector/
