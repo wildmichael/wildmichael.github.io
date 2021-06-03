@@ -43,60 +43,6 @@ Azure Cloud kann. Dazu erwähne ich dann jeweils, welche Dienste dafür genutzt
 werden können. Auch werde ich sehr exotische Dienste oder solche, die bald
 eingestellt werden, weglassen.
 
-## Analysen
-
-### Big Data Analysen
-
-Microsoft Azure bietet mehrere Dienste zur Verarbeitung von grossen Datenmengen,
-welche z.B. aus SQL Datenbanken, aber auch unstrukturierten Dateien bestehen
-können. Microsoft setzt hier auf bekannte Open-Source Technologien wie Apache
-Spark, Apache Hadoop, Apache HBase, R und Python.
-
-* [Data Factory]
-* [Data Lake Analytics]
-* [Databricks]
-* [Daten-Explorer]
-* [HDInsight]
-* [Microsoft Graph Data Connect]
-* [R-Server for HDInsight]
-* [Synapse Analytics]
-
-### Daten-Governance und Verwaltung
-
-Heute werden immer mehr Daten gesammelt. Gerade grosse Organisationen müssen
-ihre Daten einerseits gut auffindbar, und damit nutzbar machen. Andererseits
-sollen diese aber auch vor unerlaubten Zugriffen geschützt werden.
-
-* [Data Catalog]
-* [Pureview]
-
-### Datenstrom-Verarbeitung
-
-Mit diesen Diensten können Daten _on-the-fly_ transformiert und analysiert
-werden. Beispiele dafür könnten prädiktive Wartungstools sein, welche
-Maschinendaten laufend analysieren um z.B. Anomalien zu entdecken. Diese
-Analysen können auch direkt auf Geräten ausserhalb der Cloud, z.B. auf
-Maschinensteuerungen, ausgeführt werden.
-
-* [Stream Analytics]
-
-### Log-Daten Analyse
-
-Grosse Applikationen generieren grosse Mengen an Log-Daten. Diese Logs können
-unmöglich mehr einzeln gelesen werden, daher müssen sie mit spezialisierten
-Tools statistisch analysiert werden.
-
-* [Log Analytics]
-
-### Business Intelligence
-
-In der Azure Cloud gibt es Dienste und Werkzeuge um die eigenen Geschäftsdaten
-zu analysieren. Das self-service Analysetool kann aber auch unter eigenem Namen
-(d.h. als _white-label_ Produkt) in eigene Produkte eingebaut werden.
-
-* [Analysis Services]
-* [Power BI Embedded]
-
 ## Rechnerinfrastruktur
 
 Wie in fast jeder anderen Cloud können auch in Azure Rechner bzw. Server als
@@ -114,6 +60,44 @@ die Verantwortung für Updates und Wartung des Betriebssystems.
 * [VMware Horizon Cloud in Microsoft Azure]
 * [VMWare-Lösungen in Azure]
 * [Windows Virtual Desktop]
+
+## Netzwerk
+
+Auch dieser Bereich ist aufgrund seiner Diversität und Komplexität sehr gross
+und bietet sehr viele Dienste. Da gibt es Dienste zur Erstellung und Verwaltung
+von virtuellen Netzwerken zwischen Cloud-Ressourcen wie virtuellen Maschinen,
+Applikationen, Containern, etc. Für Webapplikationen gibt es Reverse Proxies,
+Firewalls und Load-Balancer. Ein Dienst kombiniert das Content Distribution
+Network (CDN) von Azure mit Sicherheitsdiensten wie Web-Application Firewall,
+SSL-Offloading und Schutz vor DDoS Angriffen. Es können private Tunnel
+eingerichtet werden, um on-premise Netzwerke und Ressourcen mit denen in der
+Cloud zu verbinden. Um z.B. Filialen miteinander zu verbinden, können virtuelle
+WANs angelegt werden. Der Netzwerkverkehr kann überwacht und gesteuert, die
+verwendeten Ressourcen bedarfsgesteuert skaliert werden. Routinginformation kann
+automatisch zwischen on-premise und Cloud-Netzwerken ausgetauscht werden.
+Entlegene Orte ohne Netzwerkinfrastruktur können mittels Satellitenverbindung in
+ein Netzwerk eingebunden werden. Betreiber von eigenen Kommunikationssatelliten
+können deren Einsatz, die Erdstationen etc. planen und als eigene Dienste auf
+Azure anbieten.
+
+* [Application Gateway]
+* [Bastion]
+* [DNS]
+* [Firewall Manager]
+* [Firewall]
+* [Front Door]
+* [Internet Analyzer]
+* [Lastenausgleich]
+* [Load Balancer]
+* [Network Watcher]
+* [Orbital]
+* [Private Link]
+* [Route Server]
+* [Traffic Manager]
+* [Virtual Network]
+* [Virtual WAN]
+* [VPN Gateway]
+* [Web Application Firewall]
 
 ## Betrieb von Anwendungen
 
@@ -237,70 +221,20 @@ einen Dienst bereit.
 * [Speicher Explorer]
 * [StorSimple]
 
-## Stapelverarbeitung
+## Mobile
 
-Viele Applikationen laufen als Stapelverarbeitung. Wie z.B. Lohnabrechnungen,
-wissenschaftliche Simulationen oder Berechnen von Portfoliorisiken. Oftmals
-benötigen diese Anwendungen viel Rechnerleistung, welche dann zwischen den
-Durchläufen brach liegt und Kosten verursacht. Mit diesem Dienst zur
-Stapelverarbeitung können die Ressourcen zusätzlich automatisch skaliert werden.
+Die meisten in der Azure Cloud angebotenen Dienste lassen sich
+selbstverständlich auch im Kontext von Mobile-Apps nutzen, z.B. um deren Backend
+zu erstellen. Dennoch bietet Microsoft einige speziell auf die Erstellung von
+Mobile-Applikationen ausgerichtete Dienste an. Diese reichen von Karten- und
+Navigationsdiensten über Programmier-Bibliotheken und Werkzeugen hin zu
+Kommunikationsplattformen, welche es dem Entwickler ermöglichen Video, Chat,
+SMS und Telefonie in der App zu nutzen.
 
-* [Batch]
-
-## Entwicklerwerkzeuge und DevOps
-
-Für Entwickler bietet Microsoft in Azure einige Dienste an. Einerseits, für das
-agile Projektmanagement, Versionskontrolle und Build Server für Continuous
-Integration und Deployment, aber auch Dienste, um Softwarepakete für .NET, NPM,
-und Python zu veröffentlichen oder im Team zu teilen.  Weiter gibt es Dienste
-zur Bereitstellung von standardisierten Entwicklungs- und Testumgebungen.
-Manuelle und explorative Tests lassen sich auch planen und protokollieren. All
-diese Dienste werden in dem Azure DevOps Portal zusammengefasst.
-
-Für Schulungen, Kurse, Hackathons, etc. lassen sich bedarfsgesteuert
-vorkonfigurierte virtuelle Maschinen bereitstellen.
-
-Um Applikationen in Azure Dienste einzubinden und um die Azure Ressourcen
-programmgesteuert zu verwalten bietet Microsoft SDK's für eine grosse Anzahl
-Programmiersprachen an und stellt Kommandozeilentools für Scripting bereit.
-Damit lässt sich das _Infrastructure-as-Code_ Paradigma umsetzen.
-
-Um die Anwendungskonfiguration zu vereinfachen bietet Azure einen Dienst, um
-die Parameter zentral zu verwalten.
-
-* [App Configuration]
-* [Artifacts]
-* [Boards]
-* [DevTest Labs]
-* [Lab Services]
-* [Pipelines]
-* [Repos]
-* [SDK's]
-* [Test Plans]
-
-## Hybrid und Multicloud
-
-Viele Anwendungsszenarien verlangen, dass Azure Ressourcen mit Computern,
-Programmen oder Geräten ausserhalb der Cloud zusammenarbeiten. Z.B. können das
-IoT Geräte (wie Anlagensteuerungen, Messanlagen, etc.), Kassensysteme, noch
-nicht in die Cloud migrierte on-premise Dienste, etc. pp. sein. Oder aber eine
-Organisation will sich nicht auf einen Cloud-Anbieter festlegen, möglicherweise
-werden aus Verfügbarkeitsgründen sogar die gleichen Applikationen in mehreren
-Clouds redundant betrieben. All diese Szenarien stellen besondere
-Herausforderungen an das Verwalten der Dienste, die Überprüfung von Policies und
-Compliance Richtlinien und die Sicherheit. Mit den von Microsoft angebotenen
-Diensten kann man diese Aufgaben unter einer vereinheitlichten, zentralen Stelle
-aus erfüllen. Andere Dienste von Microsoft in diesem Themenfeld ermöglichen es,
-Azure Dienste auch ausserhalb der Cloud zu nutzen, z.B. auf Edge-Geräten, im
-eigenen Datacenter oder an Orten ohne Netzwerkanbindung.
-
-* [Arc]
-* [ExpressRoute]
-* [Modular Datacenter]
-* [Stack Edge]
-* [Stack HCI]
-* [Stack Hub]
-* [Stack]
+* [Communications Services]
+* [Maps]
+* [Visual Studio App Center]
+* [Xamarin]
 
 ## Identität
 
@@ -357,6 +291,60 @@ entsprechenden Diensten in der Cloud integriert werden.
 * [Sphere]
 * [Time Series Insight]
 * [Windows 10 IoT Services]
+
+## Analysen
+
+### Big Data Analysen
+
+Microsoft Azure bietet mehrere Dienste zur Verarbeitung von grossen Datenmengen,
+welche z.B. aus SQL Datenbanken, aber auch unstrukturierten Dateien bestehen
+können. Microsoft setzt hier auf bekannte Open-Source Technologien wie Apache
+Spark, Apache Hadoop, Apache HBase, R und Python.
+
+* [Data Factory]
+* [Data Lake Analytics]
+* [Databricks]
+* [Daten-Explorer]
+* [HDInsight]
+* [Microsoft Graph Data Connect]
+* [R-Server for HDInsight]
+* [Synapse Analytics]
+
+### Daten-Governance und Verwaltung
+
+Heute werden immer mehr Daten gesammelt. Gerade grosse Organisationen müssen
+ihre Daten einerseits gut auffindbar, und damit nutzbar machen. Andererseits
+sollen diese aber auch vor unerlaubten Zugriffen geschützt werden.
+
+* [Data Catalog]
+* [Pureview]
+
+### Datenstrom-Verarbeitung
+
+Mit diesen Diensten können Daten _on-the-fly_ transformiert und analysiert
+werden. Beispiele dafür könnten prädiktive Wartungstools sein, welche
+Maschinendaten laufend analysieren um z.B. Anomalien zu entdecken. Diese
+Analysen können auch direkt auf Geräten ausserhalb der Cloud, z.B. auf
+Maschinensteuerungen, ausgeführt werden.
+
+* [Stream Analytics]
+
+### Log-Daten Analyse
+
+Grosse Applikationen generieren grosse Mengen an Log-Daten. Diese Logs können
+unmöglich mehr einzeln gelesen werden, daher müssen sie mit spezialisierten
+Tools statistisch analysiert werden.
+
+* [Log Analytics]
+
+### Business Intelligence
+
+In der Azure Cloud gibt es Dienste und Werkzeuge um die eigenen Geschäftsdaten
+zu analysieren. Das self-service Analysetool kann aber auch unter eigenem Namen
+(d.h. als _white-label_ Produkt) in eigene Produkte eingebaut werden.
+
+* [Analysis Services]
+* [Power BI Embedded]
 
 ## AI und Machine-Learning
 
@@ -454,6 +442,22 @@ Präferenzen, zu personalisieren.
 * [Open Datasets]
 * [Personalisierung]
 
+## Mixed Reality
+
+Virtual Reality und Augmented Reality, unter dem neuen Begriff _Mixed Reality_
+zusammengefasst, sind mittlerweile in Freizeit und Beruf angekommen. Spiele wie
+_Pokémon Go_, Navigationssysteme aber auch ganze Produktionsanlagen, nutzen
+mittlerweile die Möglichkeiten, welche VR- und AR-Brillen, Mobiltelefone und
+Tablets bieten. Mit den von Microsoft angebotenen Diensten lassen sich virtuelle
+Inhalte z.B. an physische Orte oder Objekte binden. Mittels Analyse von Sprache
+und maschinellem Sehen lassen sich auch Eingaben erfassen. Das Rendering für
+z.B. komplexe 3D-Modelle kann remote in der Cloud erfolgen und die so
+entstandenen Bilder auf die Datenbrillen übertragen werden.
+
+* [Kinect DK]
+* [Object Anchors]
+* [Remote Rendering]
+* [Spatial Anchors]
 
 ## Multimedia
 
@@ -468,6 +472,47 @@ Inhalte mit DRM vor Diebstahl geschützt werden.
 * [Live Video Analytics]
 * [Live- und On-Demand Streaming]
 * [Media Player]
+
+## Entwicklerwerkzeuge und DevOps
+
+Für Entwickler bietet Microsoft in Azure einige Dienste an. Einerseits, für das
+agile Projektmanagement, Versionskontrolle und Build Server für Continuous
+Integration und Deployment, aber auch Dienste, um Softwarepakete für .NET, NPM,
+und Python zu veröffentlichen oder im Team zu teilen.  Weiter gibt es Dienste
+zur Bereitstellung von standardisierten Entwicklungs- und Testumgebungen.
+Manuelle und explorative Tests lassen sich auch planen und protokollieren. All
+diese Dienste werden in dem Azure DevOps Portal zusammengefasst.
+
+Für Schulungen, Kurse, Hackathons, etc. lassen sich bedarfsgesteuert
+vorkonfigurierte virtuelle Maschinen bereitstellen.
+
+Um Applikationen in Azure Dienste einzubinden und um die Azure Ressourcen
+programmgesteuert zu verwalten bietet Microsoft SDK's für eine grosse Anzahl
+Programmiersprachen an und stellt Kommandozeilentools für Scripting bereit.
+Damit lässt sich das _Infrastructure-as-Code_ Paradigma umsetzen.
+
+Um die Anwendungskonfiguration zu vereinfachen bietet Azure einen Dienst, um
+die Parameter zentral zu verwalten.
+
+* [App Configuration]
+* [Artifacts]
+* [Boards]
+* [DevTest Labs]
+* [Lab Services]
+* [Pipelines]
+* [Repos]
+* [SDK's]
+* [Test Plans]
+
+## Stapelverarbeitung
+
+Viele Applikationen laufen als Stapelverarbeitung. Wie z.B. Lohnabrechnungen,
+wissenschaftliche Simulationen oder Berechnen von Portfoliorisiken. Oftmals
+benötigen diese Anwendungen viel Rechnerleistung, welche dann zwischen den
+Durchläufen brach liegt und Kosten verursacht. Mit diesem Dienst zur
+Stapelverarbeitung können die Ressourcen zusätzlich automatisch skaliert werden.
+
+* [Batch]
 
 ## Migration
 
@@ -489,76 +534,6 @@ Cloud-Datencenter transportiert werden können.
 
 * [Data Box]
 * [Migrate]
-
-## Mixed Reality
-
-Virtual Reality und Augmented Reality, unter dem neuen Begriff _Mixed Reality_
-zusammengefasst, sind mittlerweile in Freizeit und Beruf angekommen. Spiele wie
-_Pokémon Go_, Navigationssysteme aber auch ganze Produktionsanlagen, nutzen
-mittlerweile die Möglichkeiten, welche VR- und AR-Brillen, Mobiltelefone und
-Tablets bieten. Mit den von Microsoft angebotenen Diensten lassen sich virtuelle
-Inhalte z.B. an physische Orte oder Objekte binden. Mittels Analyse von Sprache
-und maschinellem Sehen lassen sich auch Eingaben erfassen. Das Rendering für
-z.B. komplexe 3D-Modelle kann remote in der Cloud erfolgen und die so
-entstandenen Bilder auf die Datenbrillen übertragen werden.
-
-* [Kinect DK]
-* [Object Anchors]
-* [Remote Rendering]
-* [Spatial Anchors]
-
-## Mobile
-
-Die meisten in der Azure Cloud angebotenen Dienste lassen sich
-selbstverständlich auch im Kontext von Mobile-Apps nutzen, z.B. um deren Backend
-zu erstellen. Dennoch bietet Microsoft einige speziell auf die Erstellung von
-Mobile-Applikationen ausgerichtete Dienste an. Diese reichen von Karten- und
-Navigationsdiensten über Programmier-Bibliotheken und Werkzeugen hin zu
-Kommunikationsplattformen, welche es dem Entwickler ermöglichen Video, Chat,
-SMS und Telefonie in der App zu nutzen.
-
-* [Communications Services]
-* [Maps]
-* [Visual Studio App Center]
-* [Xamarin]
-
-## Netzwerk
-
-Auch dieser Bereich ist aufgrund seiner Diversität und Komplexität sehr gross
-und bietet sehr viele Dienste. Da gibt es Dienste zur Erstellung und Verwaltung
-von virtuellen Netzwerken zwischen Cloud-Ressourcen wie virtuellen Maschinen,
-Applikationen, Containern, etc. Für Webapplikationen gibt es Reverse Proxies,
-Firewalls und Load-Balancer. Ein Dienst kombiniert das Content Distribution
-Network (CDN) von Azure mit Sicherheitsdiensten wie Web-Application Firewall,
-SSL-Offloading und Schutz vor DDoS Angriffen. Es können private Tunnel
-eingerichtet werden, um on-premise Netzwerke und Ressourcen mit denen in der
-Cloud zu verbinden. Um z.B. Filialen miteinander zu verbinden, können virtuelle
-WANs angelegt werden. Der Netzwerkverkehr kann überwacht und gesteuert, die
-verwendeten Ressourcen bedarfsgesteuert skaliert werden. Routinginformation kann
-automatisch zwischen on-premise und Cloud-Netzwerken ausgetauscht werden.
-Entlegene Orte ohne Netzwerkinfrastruktur können mittels Satellitenverbindung in
-ein Netzwerk eingebunden werden. Betreiber von eigenen Kommunikationssatelliten
-können deren Einsatz, die Erdstationen etc. planen und als eigene Dienste auf
-Azure anbieten.
-
-* [Application Gateway]
-* [Bastion]
-* [DNS]
-* [Firewall Manager]
-* [Firewall]
-* [Front Door]
-* [Internet Analyzer]
-* [Lastenausgleich]
-* [Load Balancer]
-* [Network Watcher]
-* [Orbital]
-* [Private Link]
-* [Route Server]
-* [Traffic Manager]
-* [Virtual Network]
-* [Virtual WAN]
-* [VPN Gateway]
-* [Web Application Firewall]
 
 ## Sicherheit
 
@@ -619,6 +594,30 @@ Mobile-App können viele dieser Aufgaben auch unterwegs erledigt werden.
 * [Service Health]
 * [Site Recovery]
 * [Cost Management und Abrechnung]
+
+## Hybrid und Multicloud
+
+Viele Anwendungsszenarien verlangen, dass Azure Ressourcen mit Computern,
+Programmen oder Geräten ausserhalb der Cloud zusammenarbeiten. Z.B. können das
+IoT Geräte (wie Anlagensteuerungen, Messanlagen, etc.), Kassensysteme, noch
+nicht in die Cloud migrierte on-premise Dienste, etc. pp. sein. Oder aber eine
+Organisation will sich nicht auf einen Cloud-Anbieter festlegen, möglicherweise
+werden aus Verfügbarkeitsgründen sogar die gleichen Applikationen in mehreren
+Clouds redundant betrieben. All diese Szenarien stellen besondere
+Herausforderungen an das Verwalten der Dienste, die Überprüfung von Policies und
+Compliance Richtlinien und die Sicherheit. Mit den von Microsoft angebotenen
+Diensten kann man diese Aufgaben unter einer vereinheitlichten, zentralen Stelle
+aus erfüllen. Andere Dienste von Microsoft in diesem Themenfeld ermöglichen es,
+Azure Dienste auch ausserhalb der Cloud zu nutzen, z.B. auf Edge-Geräten, im
+eigenen Datacenter oder an Orten ohne Netzwerkanbindung.
+
+* [Arc]
+* [ExpressRoute]
+* [Modular Datacenter]
+* [Stack Edge]
+* [Stack HCI]
+* [Stack Hub]
+* [Stack]
 
 ## Anbieten eigener Dienste
 
